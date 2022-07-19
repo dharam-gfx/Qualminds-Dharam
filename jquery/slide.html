@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    .demo{
+        background-color: rgb(32, 32, 143);
+        padding: 30px;
+        color: white;
+        font-size: 30px;
+        border-radius: 12px;
+    }
+    button{
+        background-color: red;
+        color: white;
+        padding: 10px 40px;
+        font-size: 20px;
+        margin-top: 10px ;
+        border-radius: 4px;
+    }
+    button:hover{
+        background-color: rgb(185, 1, 1);
+        transition:all 0.2s;
+    }
+</style>
+</head>
+<body>
+    <div style="height: 224px;padding: 9px;border-radius: 12px; background-color: rgb(124, 124, 216);">
+        <div class="demo">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro iusto quas sunt aut doloremque. Nulla quidem a reiciendis aliquam neque est saepe, eius velit earum dicta ex quo, et nisi obcaecati rerum doloremque ab qui dolorum quisquam, soluta quam! Doloribus vel eos, et aliquam quo odio quaerat? Magnam perferendis similique quam culpa quia? Nulla, vel?</p>
+    
+        </div>
+    </div>
+
+    
+    <button class="up" type="button">slide up</button>
+    <button class="down" type="button">slide down</button>
+    <button class="up-down" type="button">slide up-down</button>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".up").click(function(){
+                $(".demo").slideUp();
+            })
+            $(".down").click(function(){
+                $(".demo").slideDown("slow");
+            })
+            $(".up-down").click(function(){
+                $(".demo").slideToggle("slow");
+            })
+
+        })
+    </script>
+</body>
+</html>
