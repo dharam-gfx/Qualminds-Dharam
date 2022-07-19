@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input field</title>
+    <style>
+        fieldset{
+            border: 5px groove red;
+            
+        }
+        legend{
+            font-size: 30px;
+        }
+        label{
+            font-size: 18px;
+        }
+        input{
+            height: 20px;
+        }
+    </style>
+      
+    <form action="">
+        <fieldset>
+            <legend style="text-align:center ;">Application form</legend>
+            <fieldset>
+                <legend>Basic Details</legend>
+                <label for="fname">First Name:</label>
+                <br>
+                <input type="text" id="fname" placeholder="First Name" required>
+                <br><br>
+
+                <label for="lname">Last Name:</label>
+                <br>
+                <input type="text"  id="lname" placeholder="Last Name" >
+                <br><br>
+
+
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" placeholder="email " required>
+                <br><br>
+
+                <label for="number">Mobile Number:</label>
+                <br>
+                <input type="number"  id="number" placeholder="Mobile Number " required>
+                <br><br>
+
+                <label for="color">select favorite color:</label>
+                <input type="color"  id="color" >
+                <br><br>
+
+                <label for="gender">Select Gender:</label>
+                <br>
+                <input type="radio"  id="male" name="gender" required>
+                <label for="male">Male</label>
+                <input type="radio"  id="fmale"  name="gender" readonly>
+                <label for="fmale">Female</label>
+                <input type="radio"  id="trans"  name="gender" >
+                <label for="trans">Other</label>
+                <br><br>
+
+                <label for="qual">Higher Qulification:</label>
+
+                <select name="qual" id="qual">
+                    <option value="PG">PG</option>
+                    <option value="UG">UG</option>
+                    <option value="12th">12th</option>
+                    <option value="10th">10th</option>
+                </select><br><br>
+                <label for="college">College Name:</label>
+                <input list="college" placeholder="select your college " required>
+
+                <datalist name="college" id="college">
+                    <option value="PG">ug</option>
+                    <option value="UG">UG</option>
+                    <option value="12th">12th</option>
+                    <option value="10th">10th</option>
+                </datalist>
+
+
+            </fieldset><br>
+            <fieldset>
+                
+                <legend>Address Details</legend>
+                <label for="country">Country:</label>
+                <br>
+                <input type="text" id="country" placeholder="country Name" required>
+                <br><br>
+
+                <label for="state">State Name:</label>
+                <br>
+                <input type="text"  id="state" placeholder="State Name"  required>
+                <br><br>
+
+
+                <label for="city">City:</label>
+                <br>
+                <input type="text" id="city" placeholder="City Name" required>
+                <br><br>
+
+                <label for="pin">Pin Code:</label>
+                <br>
+                <input type="number"  id="pin" placeholder="Pin Code" required>
+                <br><br>
+                <label for="addr">Address:</label><br>
+                <textarea name="address" id="addr" cols="21" rows="5"></textarea>
+            </fieldset>
+            <br>
+           
+            <br>
+            <input type="checkbox" name="agree" id="agree" required>
+            <span>agree all the terms of condation.</span>
+            <br><br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+
+
+
+        </fieldset>
+    </form>
+</head>
+<body>
+    
+</body>
+</html>
