@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <style>
+    .squre {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+    }
+  </style>
+  <body>
+    <button class="btn">click me</button>
+    <button class="btn1">click me +w/h</button>
+    <button class="btn2">height toggle</button>
+
+    <div class="squre"></div>
+
+    <script>
+      $(document).ready(function () {
+        $(".btn").click(function () {
+          $(".squre").animate({
+            left: "250px",
+            width: "150px",
+            height: "150px",
+          });
+        });
+
+        $(".btn1").click(function () {
+          $(".squre").animate({
+            left: "+=20px",
+            width: "+=15px",
+            height: "+=15px",
+          });
+        });
+
+        $(".btn2").click(function () {
+          $(".squre").animate({
+            
+            // height: "toggle",
+            width:"toggle"
+          },"slow");
+        });
+      });
+    </script>
+  </body>
+</html>

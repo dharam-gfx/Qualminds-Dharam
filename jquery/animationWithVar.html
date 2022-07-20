@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <style>
+    .squre {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+    } 
+    button{
+        padding: 10px;
+        margin: 20px;
+    }
+  </style>
+  <body>
+    <button class="btn">click with var</button>
+    <button class="btn1">anim stop</button>
+  
+
+    <div class="squre"></div>
+
+    <script>
+        $(document).ready(function(){
+            var divMagic=$(".squre");
+
+            $(".btn").click(function(){
+
+                divMagic.animate({width:"500px"},"slow",function(){
+                        $(this).css("background-color","blue")
+                });
+                divMagic.animate({height:"500px"},"slow",function(){
+                        $(this).css("background-color","green")
+                });
+                divMagic.animate({width:"150px"},"slow");
+                divMagic.animate({height:"150px"},"slow",function(){
+                        $(this).css("background-color","red")
+                });
+            })
+            $(".btn1").click(function(){
+                divMagic.stop();
+            })
+        })
+     
+    </script>
+  </body>
+</html>

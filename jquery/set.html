@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1 class="demo">name</h1>
+    <h1 class="demo1">name1</h1>
+    <h1 class="demo2">name2</h1>
+
+    <h2 class="demo4">hello world</h2>
+
+    <input class="demo3" type="text" value="rahul">
+
+    <button class="btn">demo</button>
+    <button class="btn1">demo1</button>
+    <button class="btn2">demo4</button>
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+               $(".demo").text("hello dharam");
+               var val0=$(".demo").text();
+               if(val0=="hello dharam"){
+                $(".demo1").text(val0+" kumar");
+               }
+            });
+
+            $(".btn1").click(function(){
+                var val1=$(".demo3").val();
+               $(".demo").text(val1);
+               $(".demo3").val("rambo "+val1);
+               
+            });
+            $(".btn2").click(function(){
+                var newword="hello india ";
+                $(".demo4").text(function( index,oldText){
+                    return   "old text: "+ oldText +" <---->   new taxt: " +newword +"<b>world!</b>" ;
+                })
+            })
+        });
+        
+    </script>
+</body>
+</html>
