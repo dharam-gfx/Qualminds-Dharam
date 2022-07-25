@@ -75,8 +75,8 @@ function callArrayData(){
         <th scope="row">${i+1}</th>
         <td class="text-white">${item.itemName}</td>
         <td>${item.itemPrise.toFixed(2)}</td>
-        <td><button class=" btn btn-sm btn-danger" type="button" value="${i}" id="item${i}" onclick="DeleteItem(this.value)">Delete</button></td>
-        <td><button class=" btn btn-sm btn-warning" type="button">Update</button></td>
+        <td><button class=" btn btn-sm btn-danger" type="button" value="${i}"  onclick="DeleteItem(this.value)" >Delete</button></td>
+        <td><button class=" btn btn-sm btn-warning" type="button" value="${i}" onclick="UpdateItem(this.value)"  data-bs-toggle="modal" data-bs-target="#myModal">Update</button></td>
       </tr>`;
 
       total+=item.itemPrise;
@@ -101,6 +101,12 @@ function clearLocalData(){
 
 
 function DeleteItem(n){
+ items.splice(n, 1);
+ SetData();
+ callArrayData();
+}
+
+function UpdateItem(n){
  items.splice(n, 1);
  SetData();
  callArrayData();
