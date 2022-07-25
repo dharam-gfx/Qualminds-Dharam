@@ -1,6 +1,7 @@
 
 
 // price validation
+
 $(document).ready(function(){
     let Item;
     let Price;
@@ -13,7 +14,6 @@ $(document).ready(function(){
         let rs=+(prise);
        
         if(rs>=0){
-        // console.log(rs.toFixed(2));
         $("#addBtn").removeClass("disabled");
         }
         else{
@@ -24,15 +24,10 @@ $(document).ready(function(){
        $("#addBtn").addClass("disabled");
       }
     })
-    $("#addBtn").click(function () { 
-        // console.log(Item);
-        // console.log(Price);
-       
-        
-    });
 
  });
 
+ const items=[];
 
  // Toast 
  document.getElementById("addBtn").onclick=function() {
@@ -42,44 +37,71 @@ $(document).ready(function(){
     })
     toastList.forEach(toast => toast.show()) ;
     addItems();
+    callArrayData();
+   
   }
 
 // table items
-
-const items=[];
 
 function addItems(){
     let ItemName=document.getElementById("item").value;
     let ItemPrise=+document.getElementById("rs").value;
 
-    // console.log(ItemName);
-    // console.log(ItemPrise);
-    // console.log(typeof ItemPrise);
+    items.push({
+        itemName:ItemName,
+        itemPrise:ItemPrise
+    });
 
-    const item={
-        "itemName":ItemName,
-        "itemPrise":ItemPrise
-    }
-    items.push(item);
+    SetData();
 };
 
-function arrcall(){
-    console.log(items.length);
-
-    for (let i = 0; i < items.length; i++) {
-        const item = items[i];
-
-        console.log(item.ItemName);
-        console.log(item.ItemPrise);
-    //     document.getElementById("tbody").innerHTML+=`
-    //     <tr>
-    //     <th scope="row">${i+1}</th>
-    //     <td class="text-white">${item.ItemName}</td>
-    //     <td>${item.ItemPrise}</td>
-    //     <td><button class=" btn btn-sm btn-danger" type="button">Delete</button></td>
-    //     <td><button class=" btn btn-sm btn-warning" type="button">Update</button></td>
-    //   </tr>`
-    }
+function SetData(){
+  localStorage.setItem("localData",JSON.stringify(items));
 
 }
-arrcall();
+
+function callArrayData(){
+    let total=0;
+
+    clearTable();
+
+    let localData=localStorage.getItem("localData");
+    let LocalData=JSON.parse(localData)
+    for (let i = 0; i < LocalData.length; i++) {
+        const item = LocalData[i];
+  
+        document.getElementById("tbody").innerHTML+=`
+        <tr>
+        <th scope="row">${i+1}</th>
+        <td class="text-white">${item.itemName}</td>
+        <td>${item.itemPrise.toFixed(2)}</td>
+        <td><button class=" btn btn-sm btn-danger" type="button" value="${i}" id="item${i}" onclick="DeleteItem(this.value)">Delete</button></td>
+        <td><button class=" btn btn-sm btn-warning" type="button">Update</button></td>
+      </tr>`;
+
+      total+=item.itemPrise;
+    }
+    document.getElementById("total").innerHTML+=total.toFixed(2);
+
+}
+callArrayData();
+
+
+function clearTable(){
+  document.getElementById("tbody").innerHTML="";
+  document.getElementById("total").innerHTML="";
+}
+
+
+
+function clearLocalData(){
+  localStorage.clear();
+}
+
+
+
+function DeleteItem(n){
+ items.splice(n, 1);
+ SetData();
+ callArrayData();
+}

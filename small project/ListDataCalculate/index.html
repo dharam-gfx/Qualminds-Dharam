@@ -55,6 +55,8 @@
 
             <button type="button" class="btn btn-success mb-4 disabled" id="addBtn" onclick="">Add
               Item</button>
+            <button type="button" class="btn btn-danger mb-4 " id="" onclick="clearLocalData()">clear
+              </button>
 
             <div class=" position-absolute m-3 top-0 end-0">
 
@@ -88,22 +90,16 @@
             </tr>
           </thead>
           <tbody id="tbody">
-            <!-- <tr>
-              <th scope="row">1</th>
-              <td class="text-white">Mark</td>
-              <td>Otto</td>
-              <td><button class=" btn btn-sm btn-danger" type="button">Delete</button></td>
-              <td><button class=" btn btn-sm btn-warning" type="button">Update</button></td>
-            </tr> -->
-            
+         
+        
           </tbody>
           <tfoot>
-            <tr class="border border-2 border-secondary text-white">
+            <tr class="border border-2 border-secondary text-white  Footer">
               <th scope="col"></th>
               <th scope="col" class="text-warning">Total</th>
-              <th scope="col" class="text-info">$254</th>
               <th scope="col"></th>
               <th scope="col"></th>
+              <th scope="col" colspan="" class="text-info " >$<span id="total">0.00</span></th>
 
             </tr>
           </tfoot>
