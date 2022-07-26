@@ -1,3 +1,2 @@
-test/*.csharp linguist-detectable=true  
- 
 
+test/* linguist-documentation=false
