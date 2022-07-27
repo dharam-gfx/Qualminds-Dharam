@@ -1,0 +1,8 @@
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arrayString\bin\Debug\arrayString.exe.config
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arrayString\bin\Debug\arrayString.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arrayString\bin\Debug\arrayString.pdb
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arrayString\obj\Debug\arrayString.csproj.AssemblyReference.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arrayString\obj\Debug\arrayString.csproj.SuggestedBindingRedirects.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arrayString\obj\Debug\arrayString.csproj.CoreCompileInputs.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arrayString\obj\Debug\arrayString.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arrayString\obj\Debug\arrayString.pdb

@@ -1,0 +1,8 @@
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\callByValueAndRef\callByValueAndRef\bin\Debug\callByValueAndRef.exe.config
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\callByValueAndRef\callByValueAndRef\bin\Debug\callByValueAndRef.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\callByValueAndRef\callByValueAndRef\bin\Debug\callByValueAndRef.pdb
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\callByValueAndRef\callByValueAndRef\obj\Debug\callByValueAndRef.csproj.AssemblyReference.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\callByValueAndRef\callByValueAndRef\obj\Debug\callByValueAndRef.csproj.SuggestedBindingRedirects.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\callByValueAndRef\callByValueAndRef\obj\Debug\callByValueAndRef.csproj.CoreCompileInputs.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\callByValueAndRef\callByValueAndRef\obj\Debug\callByValueAndRef.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\callByValueAndRef\callByValueAndRef\obj\Debug\callByValueAndRef.pdb

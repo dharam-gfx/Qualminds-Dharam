@@ -1,0 +1,8 @@
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arraymethod\bin\Debug\arraymethod.exe.config
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arraymethod\bin\Debug\arraymethod.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arraymethod\bin\Debug\arraymethod.pdb
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arraymethod\obj\Debug\arraymethod.csproj.AssemblyReference.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arraymethod\obj\Debug\arraymethod.csproj.SuggestedBindingRedirects.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arraymethod\obj\Debug\arraymethod.csproj.CoreCompileInputs.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arraymethod\obj\Debug\arraymethod.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\arraymethod\obj\Debug\arraymethod.pdb

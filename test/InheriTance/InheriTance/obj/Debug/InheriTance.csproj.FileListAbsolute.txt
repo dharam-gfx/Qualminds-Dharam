@@ -1,0 +1,8 @@
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\InheriTance\InheriTance\bin\Debug\InheriTance.exe.config
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\InheriTance\InheriTance\bin\Debug\InheriTance.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\InheriTance\InheriTance\bin\Debug\InheriTance.pdb
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\InheriTance\InheriTance\obj\Debug\InheriTance.csproj.AssemblyReference.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\InheriTance\InheriTance\obj\Debug\InheriTance.csproj.SuggestedBindingRedirects.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\InheriTance\InheriTance\obj\Debug\InheriTance.csproj.CoreCompileInputs.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\InheriTance\InheriTance\obj\Debug\InheriTance.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\InheriTance\InheriTance\obj\Debug\InheriTance.pdb
