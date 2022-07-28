@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\test"
+    "\\test",
+    "\\test\\GusseGame\\GusseGame",
+    "\\test\\GusseGame\\GusseGame\\obj",
+    "\\test\\GusseGame\\GusseGame\\obj\\Debug",
+    "\\test\\GusseGame\\GusseGame\\obj\\Debug\\TempPE",
+    "\\test\\InheriTance\\InheriTance",
+    "\\test\\InheriTance\\InheriTance\\obj"
   ],
   "SelectedNode": "\\test",
   "PreviewInSolutionExplorer": false

@@ -1,0 +1,8 @@
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\StringIntBool\StringIntBool\bin\Debug\StringIntBool.exe.config
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\StringIntBool\StringIntBool\bin\Debug\StringIntBool.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\StringIntBool\StringIntBool\bin\Debug\StringIntBool.pdb
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\StringIntBool\StringIntBool\obj\Debug\StringIntBool.csproj.AssemblyReference.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\StringIntBool\StringIntBool\obj\Debug\StringIntBool.csproj.SuggestedBindingRedirects.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\StringIntBool\StringIntBool\obj\Debug\StringIntBool.csproj.CoreCompileInputs.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\StringIntBool\StringIntBool\obj\Debug\StringIntBool.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\StringIntBool\StringIntBool\obj\Debug\StringIntBool.pdb
