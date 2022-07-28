@@ -1,0 +1,8 @@
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GameWithCost\GameWithCost\bin\Debug\GameWithCost.exe.config
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GameWithCost\GameWithCost\bin\Debug\GameWithCost.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GameWithCost\GameWithCost\bin\Debug\GameWithCost.pdb
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GameWithCost\GameWithCost\obj\Debug\GameWithCost.csproj.AssemblyReference.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GameWithCost\GameWithCost\obj\Debug\GameWithCost.csproj.SuggestedBindingRedirects.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GameWithCost\GameWithCost\obj\Debug\GameWithCost.csproj.CoreCompileInputs.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GameWithCost\GameWithCost\obj\Debug\GameWithCost.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GameWithCost\GameWithCost\obj\Debug\GameWithCost.pdb

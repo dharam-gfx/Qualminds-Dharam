@@ -22,6 +22,7 @@ namespace InheriTance
 
             bMW.getData();
 
+       
             Console.ReadLine(); 
 
 

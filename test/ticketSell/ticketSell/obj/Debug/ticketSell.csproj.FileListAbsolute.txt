@@ -1,0 +1,8 @@
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\ticketSell\ticketSell\bin\Debug\ticketSell.exe.config
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\ticketSell\ticketSell\bin\Debug\ticketSell.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\ticketSell\ticketSell\bin\Debug\ticketSell.pdb
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\ticketSell\ticketSell\obj\Debug\ticketSell.csproj.AssemblyReference.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\ticketSell\ticketSell\obj\Debug\ticketSell.csproj.SuggestedBindingRedirects.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\ticketSell\ticketSell\obj\Debug\ticketSell.csproj.CoreCompileInputs.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\ticketSell\ticketSell\obj\Debug\ticketSell.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\ticketSell\ticketSell\obj\Debug\ticketSell.pdb

@@ -1,0 +1,8 @@
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\AtoZLetter\AtoZLetter\bin\Debug\AtoZLetter.exe.config
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\AtoZLetter\AtoZLetter\bin\Debug\AtoZLetter.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\AtoZLetter\AtoZLetter\bin\Debug\AtoZLetter.pdb
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\AtoZLetter\AtoZLetter\obj\Debug\AtoZLetter.csproj.AssemblyReference.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\AtoZLetter\AtoZLetter\obj\Debug\AtoZLetter.csproj.SuggestedBindingRedirects.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\AtoZLetter\AtoZLetter\obj\Debug\AtoZLetter.csproj.CoreCompileInputs.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\AtoZLetter\AtoZLetter\obj\Debug\AtoZLetter.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\AtoZLetter\AtoZLetter\obj\Debug\AtoZLetter.pdb

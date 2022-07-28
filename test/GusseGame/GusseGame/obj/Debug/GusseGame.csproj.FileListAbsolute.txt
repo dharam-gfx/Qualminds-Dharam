@@ -1,0 +1,8 @@
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GusseGame\GusseGame\bin\Debug\GusseGame.exe.config
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GusseGame\GusseGame\bin\Debug\GusseGame.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GusseGame\GusseGame\bin\Debug\GusseGame.pdb
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GusseGame\GusseGame\obj\Debug\GusseGame.csproj.AssemblyReference.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GusseGame\GusseGame\obj\Debug\GusseGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GusseGame\GusseGame\obj\Debug\GusseGame.csproj.CoreCompileInputs.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GusseGame\GusseGame\obj\Debug\GusseGame.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\GusseGame\GusseGame\obj\Debug\GusseGame.pdb

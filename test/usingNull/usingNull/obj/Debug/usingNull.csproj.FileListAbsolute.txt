@@ -1,0 +1,8 @@
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\usingNull\usingNull\bin\Debug\usingNull.exe.config
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\usingNull\usingNull\bin\Debug\usingNull.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\usingNull\usingNull\bin\Debug\usingNull.pdb
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\usingNull\usingNull\obj\Debug\usingNull.csproj.AssemblyReference.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\usingNull\usingNull\obj\Debug\usingNull.csproj.SuggestedBindingRedirects.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\usingNull\usingNull\obj\Debug\usingNull.csproj.CoreCompileInputs.cache
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\usingNull\usingNull\obj\Debug\usingNull.exe
+C:\Users\QualMinds\source\repos\Qualminds-Dharam\test\usingNull\usingNull\obj\Debug\usingNull.pdb
