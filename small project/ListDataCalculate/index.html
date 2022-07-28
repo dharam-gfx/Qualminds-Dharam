@@ -123,13 +123,33 @@
   
        
         <div class="modal-body text-white bg-dark">
-          Modal body..
-        </div>
+          <form class="was-validated ">
+
+            <div class="mb-3 mt-3">
+              <label for="itemu" class="form-label text-warning text-uppercase fw-bold ">Item Name</label>
   
-      
-        <div class="modal-footer bg-dark">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success" >Update</button>
+              <input type="text" class="form-control  inputFoc1" id="itemu" placeholder="Enter Item Name " name="itemName"
+                required>
+  
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+  
+  
+            <div class="mb-3">
+              <label for="rsu" class="form-label text-warning text-uppercase fw-bold">Price</label>
+  
+              <input type="text" class="form-control inputFoc1" id="rsu" placeholder="Enter Price" name="price" required>
+  
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field in number.</div>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="modal-footer bg-dark ">
+          <button type="button" class="btn btn-success disabled"  id="addBtnu"   onclick="UpdateItem()" data-bs-dismiss="modal">Update</button>
         </div>
   
       </div>

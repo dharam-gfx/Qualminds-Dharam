@@ -3,8 +3,7 @@
 // price validation
 
 $(document).ready(function(){
-    let Item;
-    let Price;
+   
     $(".inputFoc").on("keyup",function(){
      let item=$("#item").val();
      let prise=$("#rs").val();
@@ -23,7 +22,30 @@ $(document).ready(function(){
       else{
        $("#addBtn").addClass("disabled");
       }
-    })
+    });
+
+
+    $(".inputFoc1").on("keyup",function(){
+      let item=$("#itemu").val();
+      let prise=$("#rsu").val();
+      Item=item;
+      Price=prise;
+       if(item!=="" && prise!==""){
+         let rs=+(prise);
+        
+         if(rs>=0){
+         $("#addBtnu").removeClass("disabled");
+         }
+         else{
+             alert("Type should be Number")
+         }
+       }
+       else{
+        $("#addBtnu").addClass("disabled");
+       }
+     })
+
+   
 
  });
 
@@ -67,19 +89,21 @@ function callArrayData(){
 
     let localData=localStorage.getItem("localData");
     let LocalData=JSON.parse(localData)
-    for (let i = 0; i < LocalData.length; i++) {
+    if((LocalData?.length)>0){
+      for (let i = 0; i < LocalData.length; i++) {
         const item = LocalData[i];
-  
+       
         document.getElementById("tbody").innerHTML+=`
         <tr>
         <th scope="row">${i+1}</th>
         <td class="text-white">${item.itemName}</td>
         <td>${item.itemPrise.toFixed(2)}</td>
         <td><button class=" btn btn-sm btn-danger" type="button" value="${i}"  onclick="DeleteItem(this.value)" >Delete</button></td>
-        <td><button class=" btn btn-sm btn-warning" type="button" value="${i}" onclick="UpdateItem(this.value)"  data-bs-toggle="modal" data-bs-target="#myModal">Update</button></td>
+        <td><button class=" btn btn-sm btn-warning" type="button" value="${i}"  onclick="indexValueChange(this.value)" data-bs-toggle="modal" data-bs-target="#myModal">Update</button></td>
       </tr>`;
 
       total+=item.itemPrise;
+    }
     }
     document.getElementById("total").innerHTML+=total.toFixed(2);
 
@@ -96,6 +120,9 @@ function clearTable(){
 
 function clearLocalData(){
   localStorage.clear();
+  window.location.reload();
+  // callArrayData();
+  
 }
 
 
@@ -106,8 +133,18 @@ function DeleteItem(n){
  callArrayData();
 }
 
-function UpdateItem(n){
- items.splice(n, 1);
+let index=0;
+function indexValueChange(num){
+  index=num;
+}
+function UpdateItem(){
+  let ItemN=document.getElementById("itemu").value;
+  let ItemP=+document.getElementById("rsu").value;
+
+ x=items[index].itemName=ItemN;
+ y=items[index].itemPrise=ItemP;
+
  SetData();
  callArrayData();
+ 
 }
