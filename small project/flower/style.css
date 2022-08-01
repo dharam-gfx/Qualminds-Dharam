@@ -1,0 +1,65 @@
+*{
+    font-family: 'Heebo', sans-serif;
+    box-sizing: border-box;
+}
+.Hover-li,.Nav-Brand:hover,.SignUp a,.Hover-li a{
+    /* background-color: aqua; */
+    transition: all 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.Hover-li a{
+    /* background-color: aqua; */
+   color: black;
+
+}
+.Hover-li a:hover{
+    color: white;
+}
+
+.Hover-li:hover{
+    /* background: linear-gradient(  45deg,  #ec1d1d80,   #a8020280 100%  ); */
+    color: white;
+    background-color: #e71b1b;
+    
+}
+
+.Li-Active, .Li-Active a{
+   
+    color: white;
+    background-color: #e71b1b;
+    
+}
+
+.navList li a{
+    font-size: 18px;
+    font-weight: 500;
+}
+.Nav-Brand{
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #e71b1b;
+    
+}
+.Nav-Brand:hover{
+    color: #ac0b0b;
+}
+.navbar-toggler-icon{
+    background-color: rgb(15, 164, 15);
+}
+.SignUp a{
+    border: none;
+    border-radius: 5px;
+    background-color: #e71b1b;
+
+}
+.SignUp a:hover{
+    color: white;
+    background-color: #ac0b0b;
+
+  
+}
+.carousel-item img{
+    height: 600px;
+   
+}
