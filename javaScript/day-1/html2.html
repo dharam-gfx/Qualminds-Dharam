@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <button type="button" id="btn">click me</button>
+
+    <h1 id="clicked"></h1>
+    <h1 id="clicked1"></h1>
+
+    <script>
+        buttonClick=document.querySelector("#btn");
+        showDemo=document.querySelector("#clicked");
+        showDemo1=document.querySelector("#clicked1");
+        
+        buttonClick.addEventListener("click",showData);
+        buttonClick.addEventListener("click",showData1);
+
+        function showData(){
+            showDemo.textContent="clicked me";
+        }
+        function showData1(){
+            showDemo1.textContent="clicked me 2";
+        }
+
+    </script>
+</body>
+</html>
