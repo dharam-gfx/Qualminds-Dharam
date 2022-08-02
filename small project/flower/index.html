@@ -2,107 +2,350 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowers</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowers</title>
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg  bg-light  fixed-top p-0">
-            <div class="container  p-0">
-                <a class="  Nav-Brand  ps-3 ps-lg-0" href="#">Flowers</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end " id="navbarScroll">
-                    <ul class="navbar-nav  navbar-nav-scroll navList" >
-                        <li class="nav-item Hover-li pt-lg-4 mx-2 my-md-1 my-lg-0 Li-Active">
-                            <a class="nav-link  ps-2" href="#">Home</a>
-                        </li>
-                        <li class="nav-item Hover-li pt-lg-4 mx-2  my-md-1 my-lg-0">
-                            <a class="nav-link  ps-2"  href="#">About</a>
-                        </li>
-                        <li class="nav-item Hover-li pt-lg-4 mx-2  my-md-1 my-lg-0">
-                            <a class="nav-link  ps-2"  href="#">Product</a>
-                        </li>
-                        <li class="nav-item Hover-li pt-lg-4 mx-2  my-md-1 my-lg-0">
-                            <a class="nav-link  ps-2"  href="#">Blog</a>
-                        </li>
-                        <li class="nav-item pt-lg-3 mx-2  my-md-1 my-lg-0 SignUp">
-                            <a class="nav-link  px-4 text-white"  href="#">Sign Up</a>
-                        </li>
-                       
-                        
-                    </ul>
-                    <!-- <div class="d-flex">
+  <div class="container-fluid p-0 ">
+    <nav class="navbar navbar-expand-lg  bg-light  fixed-top p-0">
+      <div class="container  p-0">
+        <a class="  Nav-Brand  ps-3 ps-lg-0" href="#">Flowers</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end " id="navbarScroll">
+          <ul class="navbar-nav  navbar-nav-scroll navList">
+            <li class="nav-item Hover-li pt-lg-4 mx-2 my-md-1 my-lg-0 Li-Active">
+              <a class="nav-link  ps-2" href="#">Home</a>
+            </li>
+            <li class="nav-item Hover-li pt-lg-4 mx-2  my-md-1 my-lg-0">
+              <a class="nav-link  ps-2" href="#About">About</a>
+            </li>
+            <li class="nav-item Hover-li pt-lg-4 mx-2  my-md-1 my-lg-0">
+              <a class="nav-link  ps-2" href="#Product">Product</a>
+            </li>
+            <li class="nav-item Hover-li pt-lg-4 mx-2  my-md-1 my-lg-0">
+              <a class="nav-link  ps-2" href="#">Blog</a>
+            </li>
+            <li class="nav-item pt-lg-3 mx-2  my-md-1 my-lg-0 SignUp">
+              <a class="nav-link  px-4 text-white" href="#">Sign Up</a>
+            </li>
+
+
+          </ul>
+          <!-- <div class="d-flex">
                           <h2>ghekkdf</h2>
                     </div> -->
-                </div>
-            </div>
-        </nav>
-    </div>
-
-    <div class="container-fluid ">
-<!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div>
-    
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://wallpaperaccess.com/full/84248.png" alt="Los Angeles" class="d-block" style="width:100%">
-        <div class="carousel-caption">
-          <h3>Los Angeles</h3>
-          <p>We had such a great time in LA!</p>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="https://i.pinimg.com/736x/cb/75/08/cb75089d4437359724c28eede200cb53.jpg" alt="Chicago" class="d-block" style="width:100%">
-        <div class="carousel-caption">
-          <h3>Chicago</h3>
-          <p>Thank you, Chicago!</p>
-        </div> 
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.pinimg.com/736x/73/55/a0/7355a06b3c04bb8c006a0746d0ee74bd.jpg" alt="New York" class="d-block" style="width:100%">
-        <div class="carousel-caption">
-          <h3>New York</h3>
-          <p>We love the Big Apple!</p>
-        </div>  
-      </div>
-    </div>
-    
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
+    </nav>
   </div>
-  
-  <div class="container-fluid mt-3">
-    <h3>Carousel Example</h3>
-    <p>The following example shows how to create a basic carousel with indicators and controls.</p>
-  </div>
+
+
+
+  <div class="container-fluid mt-4 pt-3 p-0">
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators ">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active bg-danger"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class=" bg-danger"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class=" bg-danger"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <div class="  carDivCol bg-light d-flex justify-content-center ">
+
+            <div class="row">
+              <div class="col-md-6 Border p-5 d-flex flex-column justify-content-center  ">
+                <p class="display-4 mx-lg-5 px-lg-4">
+                  Fresh <span class="text-uppercase text-danger"> flowers </span> & Perfect <span
+                    class="text-uppercase text-danger">Gift</span> For your <span
+                    class="text-uppercase text-danger">loved</span> Ones
+                </p>
+                <p class="mx-lg-5 px-lg-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quam nisi ipsum autem, ullam
+                  maiores.
+                </p>
+                <div class="mx-lg-4">
+                  <div class="jumbotron  mx-lg-5 bg-white p-2  rounded rounded-5 d-flex">
+                    <select class="form-select form-select-lg m-1" aria-label=".form-select-lg example">
+                      <option selected>Type </option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-lg m-1" aria-label=".form-select-lg example">
+                      <option selected> Quality </option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+
+                    <button type="button" class="btn m-1 btn-danger">Danger</button>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-6 d-flex flex- justify-content-center  Border">
+                <div class="girlCrown">
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="  carDivCol bg-light d-flex justify-content-center ">
+
+            <div class="row">
+              <div class="col-md-6 Border p-5 d-flex flex-column justify-content-center  ">
+                <p class="display-4 mx-lg-5 px-lg-4">
+                  Fresh <span class="text-uppercase text-danger"> flowers </span> & Perfect <span
+                    class="text-uppercase text-danger">Gift</span> For your <span
+                    class="text-uppercase text-danger">loved</span> Ones
+                </p>
+                <p class="mx-lg-5 px-lg-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quam nisi ipsum autem, ullam
+                  maiores.
+                </p>
+                <div class="mx-lg-4">
+                  <div class="jumbotron  mx-lg-5 bg-white p-2  rounded rounded-5 d-flex">
+                    <select class="form-select form-select-lg m-1" aria-label=".form-select-lg example">
+                      <option selected>Type </option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-lg m-1" aria-label=".form-select-lg example">
+                      <option selected> Quality </option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+
+                    <button type="button" class="btn m-1 btn-danger">Danger</button>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-6 d-flex flex- justify-content-center  Border">
+                <div class="girlCrown">
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="  carDivCol bg-light d-flex justify-content-center ">
+
+            <div class="row">
+              <div class="col-md-6 Border p-5 d-flex flex-column justify-content-center  ">
+                <p class="display-4 mx-lg-5 px-lg-4">
+                  Fresh <span class="text-uppercase text-danger"> flowers </span> & Perfect <span
+                    class="text-uppercase text-danger">Gift</span> For your <span
+                    class="text-uppercase text-danger">loved</span> Ones
+                </p>
+                <p class="mx-lg-5 px-lg-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quam nisi ipsum autem, ullam
+                  maiores.
+                </p>
+                <div class="mx-lg-4">
+                  <div class="jumbotron  mx-lg-5 bg-white p-2  rounded rounded-5 d-flex">
+                    <select class="form-select form-select-lg m-1" aria-label=".form-select-lg example">
+                      <option selected>Type </option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <select class="form-select form-select-lg m-1" aria-label=".form-select-lg example">
+                      <option selected> Quality </option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+
+                    <button type="button" class="btn m-1 btn-danger">Danger</button>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-6 d-flex flex- justify-content-center  Border">
+                <div class="girlCrown">
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- <img src="https://i.pinimg.com/736x/73/55/a0/7355a06b3c04bb8c006a0746d0ee74bd.jpg" alt="New York" class="d-block" style="width:100%"> -->
+
+          <!-- <div class="carousel-caption">
+            <h3>New York</h3>
+            <p>We love the Big Apple!</p>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <!-- <button class="carousel-control-prev " type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon "></span>
+      </button> -->
     </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 ">
+          <h1 class="text-uppercase my-3" id="About">About Us</h1>
+          <div class="about">
+            <p class="AboutPara p-md-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga at quod tenetur, cum soluta sint sequi quos
+              expedita, aliquid illum iusto numquam. Magni dolorem dolor animi autem nobis explicabo neque laborum
+              illum, accusamus cumque omnis aliquid optio facilis repellat voluptatem, doloribus, natus provident quasi
+              praesentium odio! Iste possimus eum nulla commodi. Perferendis nobis architecto autem molestiae maxime,
+              eius exercitationem obcaecati modi impedit repudiandae quia deserunt voluptate deleniti, minus quos
+              nostrum necessitatibus! Dolorem eum eaque doloremque, inventore quia natus delectus, repellat quibusdam
+              perferendis ipsum cupiditate reprehenderit repudiandae nobis quae tenetur.
+            </p>
+            <button type="button" class="btn btn-danger mt-3">Learn More</button>
+
+          </div>
+
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="AboutFlower">
+            <img src="./assits/flower-basket-png-1.png" alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="Product mt-5" id="Product">
+        <h1 class="text-center text-uppercase my-3">Our Products</h1>
+
+        <div class="product-items">
+          <div class="row">
+            <div class="col-md-3 mb-5 d-flex justify-content-center p-0">
+              <div class="card img-fluid m-2">
+                <img class="card-img-top bg-light p-2" src="./assits/flower-basket-png-1.png" alt="Card image"
+                  style="width:100%">
+                <div class="card-img-overlay">
+                  <a href="#" class="btn btn-sm btn-danger">Profile</a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center m-1">Red rose(Luxury)</h5>
+                  <p class="card-text text-center m-1">Some some text.</p>
+                  <h6 class="card-text text-center"><span class="text-danger ">$50.00 -</span> $90.00</h6>
+                  <div class="text-center">
+                    <a href="#" class="btn btn-sm btn-danger  "> -- </a> <span class="fw-bold p-1"> 8 </span> <a
+                      href="#" class="btn btn-sm btn-danger">+</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-3 mb-5 d-flex justify-content-center p-0">
+              <div class="card img-fluid m-2">
+                <img class="card-img-top bg-light p-2" src="./assits/flower-basket-png-1.png" alt="Card image"
+                  style="width:100%">
+                <div class="card-img-overlay">
+                  <a href="#" class="btn btn-sm btn-danger">Profile</a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center m-1">Red rose(Luxury)</h5>
+                  <p class="card-text text-center m-1">Some some text.</p>
+                  <h6 class="card-text text-center"><span class="text-danger ">$50.00 -</span> $90.00</h6>
+                  <div class="text-center">
+                    <a href="#" class="btn btn-sm btn-danger  "> -- </a> <span class="fw-bold p-1"> 8 </span> <a
+                      href="#" class="btn btn-sm btn-danger">+</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-3 mb-5 d-flex justify-content-center p-0">
+              <div class="card img-fluid m-2">
+                <img class="card-img-top bg-light p-2" src="./assits/flower-basket-png-1.png" alt="Card image"
+                  style="width:100%">
+                <div class="card-img-overlay">
+                  <a href="#" class="btn btn-sm btn-danger">Profile</a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center m-1">Red rose(Luxury)</h5>
+                  <p class="card-text text-center m-1">Some some text.</p>
+                  <h6 class="card-text text-center"><span class="text-danger ">$50.00 -</span> $90.00</h6>
+                  <div class="text-center">
+                    <a href="#" class="btn btn-sm btn-danger  "> -- </a> <span class="fw-bold p-1"> 8 </span> <a
+                      href="#" class="btn btn-sm btn-danger">+</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-3 mb-5 d-flex justify-content-center p-0">
+              <div class="card img-fluid m-2">
+                <img class="card-img-top bg-light p-2" src="./assits/flower-basket-png-1.png" alt="Card image"
+                  style="width:100%">
+                <div class="card-img-overlay">
+                  <a href="#" class="btn btn-sm btn-danger">Profile</a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center m-1">Red rose(Luxury)</h5>
+                  <p class="card-text text-center m-1">Some some text.</p>
+                  <h6 class="card-text text-center"><span class="text-danger ">$50.00 -</span> $90.00</h6>
+                  <div class="text-center">
+                    <a href="#" class="btn btn-sm btn-danger  "> -- </a> <span class="fw-bold p-1"> 8 </span> <a
+                      href="#" class="btn btn-sm btn-danger">+</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+
 
 </body>
 
