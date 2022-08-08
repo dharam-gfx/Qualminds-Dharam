@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array traversing</title>
+</head>
+<body>
+    <h1>Array traversing</h1>
+
+    <input type="text" id="inputValue"  placeholder="Enter Index Number">
+    <button type="button" onclick="GetInputValue()">get Element</button>
+    <script>
+        let MyArray=[44,23,1,32,3,4,5,543,3,6];
+
+        for(let i=0;i<MyArray.length;i++){
+            document.write(`<h3>Array of ${i} is ${MyArray[i]}</h3>`)
+        }
+
+        function GetInputValue(){
+            let index=document.getElementById("inputValue").value;
+
+            if(index<MyArray.length && index>=0 && typeof(parseInt(index))==="number"){
+                alert(`Array of ${index} is ${MyArray[index]}`)
+            }
+            else
+            alert("Please Enter a Valid Number")
+
+        }
+
+    </script>
+</body>
+</html>

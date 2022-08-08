@@ -128,7 +128,9 @@ function clearLocalData(){
 
 
 function DeleteItem(n){
- items.splice(n, 1);
+  let currentIndex= parseInt(n);
+  debugger;
+ items.splice(currentIndex, 1);
  SetData();
  callArrayData();
 }
