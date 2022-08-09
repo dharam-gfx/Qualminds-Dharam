@@ -1,0 +1,27 @@
+<p>sample-tut1 works!</p>
+
+<div class="container">
+    <h3>{{title}}</h3>
+
+    <h2>Name: {{Name}}</h2>
+
+    <form action="">
+        <label for="Name" class="my-2 fw-bold">Name</label>
+        <input class="form-control" type="text" name="name" id="Name" #name>
+    </form>
+    <button class="btn my-4 btn-lg btn-success" [disabled]="disabledValue" (click)="getvalue(name.value)">button</button><br>
+    <button type="button" class="btn btn-warning" (click)="enableButton()">enable/disable button click me</button><br>
+</div>
+
+
+<div class="container">
+    <h1>tut 9</h1>
+
+    <h4 [ngStyle]="{'background-color':bgColor,'color':textColor}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, quidem maiores! Quibusdam quod in possimus molestias maiores eius saepe magnam labore enim obcaecati?</h4>
+   <button type="button" class="btn btn-primary my-2" (click)="changeColor()">change color</button>
+
+
+   <h3 [ngClass]="designClass">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, voluptates quis?</h3>
+   <button type="button" class="btn btn-info my-2" (click)="changeClass()">change color</button>
+  
+</div>

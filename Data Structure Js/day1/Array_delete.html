@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+</head>
+<body>
+    <h1>----Delete----</h1>
+    <h2 id="oldData"></h2>
+    <h2 id="newData"></h2>
+    <label for="pos">Enter pos for delete element</label><br>
+    <input type="text" name="" id="pos" placeholder="Enter position"><br><br>
+    <button type="button" onclick="deleteData()">update</button>
+
+    <script>
+
+        let data=[20,40,62,30,88];
+
+        // let pos=2;
+
+        // for(let i=pos;i<data.length-1;i++){
+        //     data[i]=data[i+1];
+        //     // console.log(data[i]);
+        // }
+        // data.length=data.length-1;
+
+        console.log(data);
+
+        document.getElementById( "oldData" ).innerHTML = data;
+
+        deleteData=()=>{
+            positionInput = document.querySelector( "#pos");
+            let pos = parseInt( positionInput.value );
+
+
+            console.log("ggg");
+        }
+    </script>
+    
+</body>
+</html>

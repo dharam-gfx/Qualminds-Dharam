@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>insert</title>
 </head>
+
 <body>
     <h1>array insert </h1>
     <h2 id="oldData"></h2>
     <h2 id="newData"></h2>
-    <input type="text" id="element"   placeholder="Enter element" ><br><br>
+    <input type="text" id="element" placeholder="Enter element"><br><br>
     <input type="text" name="" id="pos" placeholder="Enter position"><br><br>
     <button type="button" onclick="updateData()">update</button>
 
     <script>
-        let data=[44,12,52,36,40,11];
+        let data = [44, 12, 52, 36, 40, 11];
         // let newElement=99;
         // let pos=2;
         // for(let i=data.length-1;i>=0;i--){
@@ -28,35 +30,35 @@
         //     }
         // }
 
-        console.log(data);
-        document.getElementById("oldData").innerHTML=data;
+        console.log( data );
+        document.getElementById( "oldData" ).innerHTML = data;
 
-     
-        function updateData(){
-        elementInput=document.querySelector("#element");
-        positionInput=document.querySelector("#pos");
-    
-        
-        let newElement=parseInt(elementInput.value);
-        let pos=parseInt(positionInput.value)-1;
 
-        if(pos<data.length && typeof(pos)==="number" && pos>=0){
+        function updateData() {
+            elementInput = document.querySelector( "#element" );
+            positionInput = document.querySelector( "#pos" );
 
-            for(let i=data.length-1;i>=0;i--){
-            if(pos<=i){
-                data[i+1]=data[i];
-                if(pos==i){
-                    data[i]=newElement;
+
+            let newElement = parseInt( elementInput.value );
+            let pos = parseInt( positionInput.value ) - 1;
+
+            if ( pos < data.length && typeof ( pos ) === "number" && pos >= 0 ) {
+
+                for ( let i = data.length - 1; i >= 0; i-- ) {
+                    if ( pos <= i ) {
+                        data[i + 1] = data[i];
+                        if ( pos == i ) {
+                            data[i] = newElement;
+                        }
+                    }
                 }
+                document.getElementById( "newData" ).innerHTML = data;
             }
-          }
-          document.getElementById("newData").innerHTML=data;
-        }
-        else alert("please Enter Valid Input")
-        
+            else alert( "please Enter Valid Input" )
         }
 
     </script>
-    
+
 </body>
+
 </html>
