@@ -109,28 +109,6 @@
 }
 
 
-@media only screen and (max-width: 768px) {
-    .hamburger {
-        display: block;
-        margin-top: 30px;
-    }
-
-    .navlink {
-        display: none;
-    }
-
-    .logoImg {
-        width: 50px;
-        height: 50px;
-        transform: translate(40%, 10%);
-    }
-
-    .nav span {
-
-        margin: -15px 0px 0px 60px;
-
-    }
-}
 
 .landingPage {
     width: 100%;
@@ -259,7 +237,7 @@
 }
 
 .searchINPUT i {
-    color: #202020;
+    color: #919191;
     font-size: 18px;
     position: absolute;
     transform: translate(70%, 70%);
@@ -271,7 +249,7 @@
     background-color: #ea474c;
     color: white;
     display: flex;
-    padding: 15px;
+    padding: 25px;
     font-weight: 300;
 }
 
@@ -283,7 +261,7 @@
 }
 
 .box-1 {
-    padding: 12px 0px;
+    padding: 1px 0px;
 
 }
 
@@ -317,9 +295,15 @@
 .box1m {
     margin-top: 18px;
 }
-
+.redio1{
+    width: 21.8%;
+}
 .redio2Lb {
-    padding-left: 10px;
+    padding-left: 25px;
+    /* padding-right: 2%; */
+    /* margin-top: 32px; */
+    /* height: 132px; */
+    /* width: 0; */
     border-left: 2px solid rgba(255, 255, 255, 0.377);
 }
 
@@ -436,6 +420,7 @@
     /* border: 1px solid green; */
 }
 
+
 .inpFild label,
 .inpFild input {
     display: block;
@@ -461,6 +446,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 400;
+    margin-top: 32px;
 
 }
 
@@ -474,10 +460,12 @@
 }
 
 .inputAdd {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 400;
+    margin-top: 32px;
 
 }
 
@@ -486,7 +474,63 @@
     border-radius: 4px;
     border: 1px solid #f6f6f6;
 }
+.inputUpdate {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    margin-top: 32px;
+    display: none;
 
+}
+
+.inputUpdate span {
+    padding: 8px 25px;
+    border-radius: 4px;
+    border: 1px solid #f6f6f6;
+}
+.Valid{
+padding: 8px 0px;
+}
+.tbl{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.tbl,.tbl .tr{
+    border: 1px solid white;
+}
+.thead tr{
+    background-color:  #0000000e;
+    
+    border: 1px solid white;
+}
+.thead th{
+    padding: 10px 16px;
+}
+.tbody{
+    text-align: center;
+}
+.tbody tr td{
+    text-align: center;
+    padding: 10px 16px;
+}
+.tbody tr td button{
+   background-color: #ea474c;
+   border: none;
+   margin: 0px 5px;
+   color: white;
+   padding: 5px 8px;
+   border-radius: 4px;
+   font-size: 20px;
+   transition: all 0.2s;
+   cursor: pointer;
+   transition-timing-function: ease-in-out;
+}
+.tbody tr td button:hover{
+   box-shadow: 4px 6px 5px  0px rgba(0, 0, 0, 0.103);
+}
 .sendBtn {
     text-align: center;
 }
@@ -533,6 +577,29 @@
 /* @media only screen and (max-width: 600px){
 
 } */
+
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .navlink {
+        display: none;
+    }
+
+    .logoImg {
+        width: 50px;
+        height: 50px;
+        transform: translate(40%, 10%);
+    }
+
+    .nav span {
+
+        margin: -15px 0px 0px 60px;
+
+    }
+}
 @media only screen and (max-width: 425px) {
 
     .landingPage {
