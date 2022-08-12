@@ -14,6 +14,7 @@ let Valid1=document.querySelector("#Valid1");
 let Valid2=document.querySelector("#Valid2");
 let Valid3=document.querySelector("#Valid3");
 let addFriend=document.querySelector("#addFriend");
+let inputUpdate=document.querySelector("#inputUpdate");
 
 
 f_nameKeyUp.addEventListener("keyup",valid_f);
@@ -84,9 +85,9 @@ function addFriendCall(){
     }
     if(flagValid){
         let item={
-            "name_f":value_f,
-            "name_l":value_l,
-            "email":value_em
+            name_f:value_f,
+            name_l:value_l,
+            email:value_em
         }
         dataList.push(item);
         // console.log(dataList); 
@@ -108,7 +109,7 @@ function setData(){
 
 function dataListPrint(){
     let getData=JSON.parse(localStorage.getItem("localSetData"));
-    console.log(getData);
+    // console.log(getData);
 
     // setInArr(getData);
 
@@ -125,20 +126,56 @@ function dataListPrint(){
                             <td>${getData[i].name_l}</td>
                             <td>${getData[i].email} </td>
                             <td>
-                                <button type="button" id="delete" onclick="delete(${i})"><i class="fa fa-trash"></i></button>
-                                <button type="button" id="update" onclick="update(${i})"><i class="fa fa-edit"></i></button>
+                                <button type="button" id="delete" value="${i}" onclick="deleteItem(this.value)"><i class="fa fa-trash"></i></button>
+                                <button type="button" id="update" value="${i}" onclick="updateItem(this.value)"><i class="fa fa-edit"></i></button>
                             </td>
                         </tr>
             `
+        }
+        if(getData.length==0){
+        document.getElementById("tbl").style.visibility="hidden";
 
         }
     }
     else{
         document.getElementById("tbl").style.visibility="hidden";
+        
     }
+    
     
 }
 dataListPrint();
 // function setInArr(getData){
 //     dataList=getData;
 // }
+function deleteItem(itemIndex){
+    let currentIndex= parseInt(itemIndex);
+    // console.log("xxssss"+ currentIndex);
+
+    dataList.splice(currentIndex,1)  
+    
+        setData();
+    // dataListPrint(); 
+}
+let updateItemIndex=null;
+function updateItem(itemIndex){
+    updateItemIndex=itemIndex;
+    console.log(dataList[itemIndex]);
+    f_nameKeyUp.value=dataList[itemIndex].name_f;
+    l_nameKeyUp.value=dataList[itemIndex].name_l;
+    _emailKeyUp.value=dataList[itemIndex].email;
+}
+inputUpdate.addEventListener("click",updateDataList);
+
+function updateDataList(){
+console.log(updateItemIndex);
+// dataList[updateDataList].name_f= f_nameKeyUp.value;
+// dataList[updateDataList].name_l= l_nameKeyUp.value;
+// dataList[updateDataList].email= _emailKeyUp.value;
+console.log(dataList[updateItemIndex].name_f);
+console.log(dataList);
+
+dataList[updateDataList].name_f = "ffffffff";
+// dataList[updateDataList].name_l= l_nameKeyUp.value;
+// dataList[updateDataList].email= _emailKeyUp.value;
+}
