@@ -1,79 +1,88 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
+
 }
-.navBox{
-   
+
+.navBox {
+
     z-index: 1;
-   box-shadow: 0px 0px 30px 15px rgb(19, 19, 19);
-    
+    box-shadow: 0px 0px 30px 15px rgb(19, 19, 19);
+
 
 }
 
 
-.navBox{
+.navBox {
     padding: 10px 0px;
     width: 100%;
     position: fixed;
     background-color: rgb(19, 19, 19);
-   
+
 }
-.logo{
-    
-   font-size: 35px;
+
+.logo {
+
+    font-size: 35px;
     color: white;
     font-family: 'Pacifico', cursive;
 }
-.logo span{
+
+.logo span {
     color: red;
 }
-   
+
 ::-webkit-scrollbar {
     display: none;
 }
-.body{
+
+.body {
     font-family: 'Oxygen';
     letter-spacing: 1px;
     font-weight: 600;
     box-sizing: border-box;
     background-color: rgb(19, 19, 19);
- 
-    
+
+
 }
-.buttonList{
-    
+
+.buttonList {
+
     margin-top: 8px;
     display: flex;
     justify-content: center;
     list-style: none;
     padding-left: 0;
 }
-.buttonList li a{
-   
-  
+
+.buttonList li a {
+
+
     padding: 8px 15px;
- 
+
     margin: 0px 2px;
     color: white;
     text-decoration: none;
     border-radius: 20px;
-   
+
     transition: all 0.4s;
     transition-timing-function: ease-in-out;
-    
-}
-.buttonList li a:hover{
-    background-color: red;
-    /* background-image: linear-gradient(30deg,rgb(177, 5, 5),rgb(255, 0, 0),rgb(177, 5, 5)); */
-    box-shadow: 0px 0px  25px  rgba(255, 0, 0, 0.486);
 
 }
-.btnDown{
+
+.buttonList li a:hover {
+    background-color: red;
+    /* background-image: linear-gradient(30deg,rgb(177, 5, 5),rgb(255, 0, 0),rgb(177, 5, 5)); */
+    box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.486);
+
+}
+
+.btnDown {
     margin-top: 8px;
 }
-.btnDown a{
+
+.btnDown a {
     color: white;
     background-color: red;
     border: 1.5px solid rgb(253, 253, 253);
@@ -87,59 +96,63 @@
 
 
 }
-.btnDown a:hover{
+
+.btnDown a:hover {
     color: white;
     background-color: rgb(19, 19, 19);
     border: 1.5px solid red;
-    box-shadow: 0px 0px  25px  rgba(255, 0, 0, 0.724);
+    box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.724);
 }
-.landingPage{
-    
+
+.landingPage {
     color: white;
     background-color: rgb(19, 19, 19);
 }
-.nameData{
+.nameData {
     text-align: center;
     padding-top: 9%;
-    
+}
 
+.objective {
+    padding: 0px 30px;
 }
-.objective{
-    padding:  0px 30px;
+
+.mainImgBox{
+
+    padding: 40px;
 }
-.mainimgBox{
-   
-   padding: 40px;
-}
-.imgBox{
-    
+
+.imgBox {
+
     margin: auto;
     width: 300px;
-    
+
 }
-.cir4{
+
+.cir4 {
     width: 300px;
     height: 300px;
     background-image: url('./Dharmendraaaa.jpg');
     background-size: 400px;
     background-repeat: no-repeat;
-    background-position-y:-140px ;
-    background-position-x:-46px ;
-   
+    background-position-y: -140px;
+    background-position-x: -46px;
+
 
     border-radius: 50%;
     position: absolute;
-    transform: translate(2% ,-99%);
+    transform: translate(2%, -99%);
 }
 
-.cir1{
-    
+.cir1 {
+
     width: 300px;
     height: 300px;
     background-color: rgb(251, 0, 0);
     border-radius: 50%;
 }
-.cir2{
+
+.cir2 {
     /* width: 200px;
     height: 200px;
     background-image: linear-gradient(30deg,rgb(177, 5, 5),rgb(255, 0, 0),rgb(177, 5, 5));
@@ -149,7 +162,7 @@
     transform: translate(2% ,-99%); */
 }
 
-.cir3{
+.cir3 {
 
 
     width: 300px;
@@ -157,53 +170,57 @@
     background-color: rgb(66, 189, 52);
     border-radius: 50%;
     position: absolute;
-    transform: translate(4% ,-97%);
+    transform: translate(4%, -97%);
 }
 
-.TitaleHeading{
-    
+.TitaleHeading {
+
     font-size: 35px;
-     color: white;
-     font-family: 'Pacifico', cursive;
- }
- .TitaleHeading span{
-     color: red;
- }
- .thname{
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+.TitaleHeading span {
+    color: red;
+}
+
+.thname {
     font-size: 50px;
- }
+}
 
- .aboutImg {
-   width: 300px;
-   height: 300px;
-   /* border: 2px solid blue; */
-   background-image: url('./Dharmendraaaa.jpg');
-   /* box-shadow: 10px 10px 10px green; */
-   background-size: 300px;
-   background-repeat: no-repeat;
-   background-position: -00px -100px ;
-   margin: auto;
-   border-top-left-radius: 20px;
-   border-bottom-right-radius: 20px;
+.aboutImg {
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid blue; */
+    background-image: url('./Dharmendraaaa.jpg');
+    /* box-shadow: 10px 10px 10px green; */
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: -00px -100px;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 
-box-shadow: 5px 5px 20px 5px rgb(3, 82, 3),-10px -10px 20px 0px red;
-   /* background: linear-gradient(to bottom, red, blue); */
+    box-shadow: 5px 5px 20px 5px rgb(3, 82, 3), -10px -10px 20px 0px red;
+    /* background: linear-gradient(to bottom, red, blue); */
 
 
- }
-.aboutDetails{
-   /* border: 2px solid blue; */
- 
+}
+
+.aboutDetails {
+    /* border: 2px solid blue; */
+
     margin: auto;
 }
-.abouteTitle{
+
+.abouteTitle {
     font-size: 26px;
 }
 
 
 
 
-.smbtnall a{
+.smbtnall a {
     color: white;
     background-color: red;
     border: 1.5px solid rgb(253, 253, 253);
@@ -217,26 +234,35 @@ box-shadow: 5px 5px 20px 5px rgb(3, 82, 3),-10px -10px 20px 0px red;
 
 
 }
-.smbtnall a:hover{
+
+.smbtnall a:hover {
     color: white;
     background-color: rgb(19, 19, 19);
     border: 1.5px solid red;
-    box-shadow: 0px 0px  25px  rgba(255, 0, 0, 0.724);
+    box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.724);
 }
-.th2{
+
+.th2 {
     font-size: 20px;
 }
-.Card{
+
+.Card {
     /* border: 2px solid gray; */
     background-color: rgb(33, 33, 33);
- 
+
     border-radius: 8px;
     padding: 25px 10px;
-  
-   
+
+
 }
+
+.footer h6 {
+    background-color: red;
+}
+
+
 @media screen and (max-width: 768px) {
-    .landingPage{
+    .landingPage {
         padding-top: 140px;
     }
-  }
+}
