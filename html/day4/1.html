@@ -104,7 +104,11 @@
             width: 200px;
             height: 250px;
             border: 5px solid red;
-            margin: 5px 5px;
+            
+        }
+
+        .title h1 {
+            font-size: clamp(1rem, 0.8rem + 10vw, 2.5rem);
         }
 
         @media only screen and (max-width:768px) {
@@ -119,21 +123,58 @@
             }
 
             .boxes {
-
                 /* gap: 10px; */
                 /* grid-template-columns: 1fr; */
-
                 /* grid-template-areas: "a" ;  */
-
             }
         }
     </style>
 </head>
 
 <body>
+    <div class="inputf">name
+        <input type="text" id="input1"><br><br>
+        password
+        <input type="password" id="input2"><br><br>
+        email
+        <input type="email" id="input3"><br><br>
+        <button type="button" onclick="setData()">submit</button>
+    </div>
+    <script>
+
+        dataList = [];
+
+        function setData() {
+            FullName = document.getElementById( "input1" ).value;
+            Password = document.getElementById( "input2" ).value;
+            Email = document.getElementById( "input3" ).value;
+            dataList.push( {
+                Name: FullName,
+                Pass: Password,
+                EmailId: Email
+            } );
+            localStorage.setItem( "LogInData", JSON.stringify( dataList ) );
+
+            ResetInputField();
+
+        }
+        ResetInputField = () => {
+            document.getElementById( "input1" ).value = null;
+            document.getElementById( "input2" ).value = null;
+            document.getElementById( "input3" ).value = null;
+        }
+
+
+
+    </script>
+    <div class="cont">
+        <div class="title">
+            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+
+        </div>
+    </div>
 
     <div class="cont">
-       
 
         <div class="boxes">
             <div class="card">
