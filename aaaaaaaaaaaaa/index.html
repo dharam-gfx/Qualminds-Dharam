@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .navsec{
+            background-color: aquamarine;
+            padding: 20px 0px;
+            
+        }
+       .BorderCheck{
+        border: 2px solid red;
+       }
+       .nav-bar{
+        margin: auto;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       .nav-links ul{
+        list-style-type: none;
+        display: flex;
+        /* gap: 40px; */
+
+       
+       }
+       .nav-links ul li{
+            margin:  0px 20px;
+       }
+       .landing-page{
+        display: flex;
+      
+       }
+       .imgsec {
+        width: 100%;
+       }
+       .imgsec h1{
+        text-align: center;
+        font-size: 5rem;
+       }
+       .imgsec p{
+        text-align: center;
+        font-size: 1rem;
+       }
+       /* .textsec{
+        width: 30%;
+       } */
+       .footer{
+        display: flex;
+       }
+       .item1{
+        text-align: center;
+        padding: 20px;
+       }
+       @media only screen and (max-width: 425px) {
+        .footer{
+        flex-direction: column;
+       }
+       .nav-links {
+        display: none;
+
+       
+       }
+ 
+}
+    </style>
+</head>
+<body>
+    <nav class="navsec">
+        <div class="nav-bar ">
+            <div class="logo ">
+                <h1>logo here </h1>
+            </div>
+            <div class="nav-links ">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                </ul>
+
+            </div>
+            <!-- <div class="resnav">
+                <h1>0</h1>
+            </div> -->
+        </div>
+    </nav>
+
+    <section>
+        <div class="landing-page BorderCheck">
+            <div class="imgsec BorderCheck">
+                <h1>my cloth</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio numquam sunt exercitationem eveniet iusto blanditiis esse, laboriosam qui tenetur quisquam saepe a, nemo modi quasi voluptas assumenda. Ipsa possimus commodi enim doloremque nulla, porro aut vero. Ea nihil iure atque, totam quis quibusdam earum, velit, fugit quaerat maiores dolorum illum iste amet quidem deserunt saepe.</p>
+            </div>
+            <!-- <div class="textsec BorderCheck">
+<h3>efdsvfd</h3>
+            </div> -->
+        </div>
+    </section>
+    <section>
+        <footer>
+            <div class="footer BorderCheck">
+                <div class="item1 BorderCheck">
+                    <h3>adbot</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam cum sint animi illum, hic sequi culpa at optio quibusdam ratione excepturi praesentium consectetur!</p>
+                </div>
+                <div class="item1 BorderCheck">
+                    <h3>adbot</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam cum sint animi illum, hic sequi culpa at optio quibusdam ratione excepturi praesentium consectetur!</p>
+                </div>
+                <div class="item1 BorderCheck">
+                    <h3>adbot</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam cum sint animi illum, hic sequi culpa at optio quibusdam ratione excepturi praesentium consectetur!</p>
+                </div>
+                <!-- <div class="item1 BorderCheck">
+                    <h3>adbot</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam cum sint animi illum, hic sequi culpa at optio quibusdam ratione excepturi praesentium consectetur!</p>
+                </div> -->
+            </div>
+        </footer>
+    </section>
+    
+</body>
+</html>
