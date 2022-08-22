@@ -1,115 +1,133 @@
-*{
+* {
     font-family: 'Heebo', sans-serif;
     box-sizing: border-box;
 }
-.Hover-li,.Nav-Brand:hover,.SignUp a,.Hover-li a{
+
+.Hover-li,
+.Nav-Brand:hover,
+.SignUp a,
+.Hover-li a {
     /* background-color: aqua; */
     transition: all 0.3s;
     transition-timing-function: ease-in-out;
 }
-.Hover-li a{
+
+.Hover-li a {
     /* background-color: aqua; */
-   color: black;
+    color: black;
 
 }
-.Hover-li a:hover{
+
+.Hover-li a:hover {
     color: white;
 }
 
-.Hover-li:hover{
+.Hover-li:hover {
     /* background: linear-gradient(  45deg,  #ec1d1d80,   #a8020280 100%  ); */
     color: white;
     background-color: #e71b1b;
-    
+
 }
 
-.Li-Active, .Li-Active a{
-   
+.Li-Active,
+.Li-Active a {
+
     color: white;
     background-color: #e71b1b;
-    
+
 }
 
-.navList li a{
+.navList li a {
     font-size: 18px;
     font-weight: 500;
 }
-.Nav-Brand{
+
+.Nav-Brand {
     font-size: 35px;
     text-decoration: none;
     font-weight: 700;
     color: #e71b1b;
-    
+
 }
-.Nav-Brand:hover{
+
+.Nav-Brand:hover {
     color: #ac0b0b;
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
     background-color: rgb(15, 164, 15);
 }
-.SignUp a{
+
+.SignUp a {
     border: none;
     border-radius: 5px;
     background-color: #e71b1b;
 
 }
-.SignUp a:hover{
+
+.SignUp a:hover {
     color: white;
     background-color: #ac0b0b;
 
-  
+
 }
 
 
 /* .carousel .carousel-control-prev-icon { */
-    /* change fill="currentColor" to red to make it white  */
-      /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/> </svg>'); */
-    /* } */
-    
-    /* .carousel .carousel-control-next-icon { */
-      /* change fill="currentColor" to red to make it white  */
-      /* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-chevron-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>  </svg>'); */
+/* change fill="currentColor" to red to make it white  */
+/* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/> </svg>'); */
+/* } */
 
-    /* } */
-    
-    
-    /* .carousel-control-next-icon, .carousel-control-prev-icon {
+/* .carousel .carousel-control-next-icon { */
+/* change fill="currentColor" to red to make it white  */
+/* background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-chevron-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>  </svg>'); */
+
+/* } */
+
+
+/* .carousel-control-next-icon, .carousel-control-prev-icon {
         Use to adjust size of icons
         width: 3rem;
         height: 3rem;
     } */
 
-.carDivCol{
+.carDivCol {
     height: 96vh;
-    width:100%;
+    width: 100%;
     z-index: 1;
- 
+
 }
-.Border{
- /* border: 1px solid green; */
+
+.Border {
+    border: 1px solid green;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
-.girlCrown{
+
+.girlCrown {
     width: 100%;
     height: 100%;
     /* background-color: red; */
-    background-image:url('./assits/girl-.png');
+    background-image: url('./assits/girl-.png');
     background-size: cover;
     background-position: 50% 0px;
 }
-.AboutPara{
+
+.AboutPara {
     text-align: justify;
 }
-.AboutFlower{
+
+.AboutFlower {
     width: 100%;
     height: 350px;
     text-align: center;
-  
-   
+
+
 }
-.AboutFlower img{
+
+.AboutFlower img {
     width: 330px;
     padding-top: 40px;
     /* float: right; */
@@ -117,13 +135,66 @@
     filter: contrast(1.3);
 }
 
+.item2_bg_Pink {
+    background-color: #f6dce3;
+}
+
+.item2_bg_gray {
+    z-index: 1;
+    background-image: linear-gradient(#f3f3f4, #e9eaed);
+}
+
+.item2_img img {
+    width: 500px;
+    height: 220px;
+}
+
+.item2_img2 img {
+
+    height: 220px;
+    float: right;
+}
+
+.item2_discount {
+    font-size: 18px;
+    font-weight: 300;
+    color: #1c1c1c;
+}
+
+.item2_name {
+    font-size: 30px;
+    color: #e71b1b;
+}
+
+.itme2_shopNow {
+    color: rgb(245, 70, 99);
+    font-weight: 500;
+}
+
+.big_card {
+    background-color: #e4e4e4;
+}
+
+.big_card .flower img {
+    max-width: 50%;
+
+}
+
+.big_card_text p:nth-child(1) {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+
+.big_card_text p:nth-child(2) {
+    font-size: 45px;
+}
+
 @media screen and (max-width: 570px) {
-    .girlCrown{
+    .girlCrown {
         width: 100%;
-        height:80vh;
-        background-image:url('./assits/girl-.png');
+        height: 80vh;
+        background-image: url('./assits/girl-.png');
         background-size: cover;
         background-position: 50% -50px;
     }
-  }
-
+}

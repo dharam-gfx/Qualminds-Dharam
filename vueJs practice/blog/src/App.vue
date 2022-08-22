@@ -5,6 +5,7 @@
   <condationalStmVue />
   <ParentTochildOneVue />
   <BindingModuleVue />
+  <propsmoduleVue/>
 </template>
 
 <script>
@@ -14,6 +15,7 @@ import MyPresTwoVue from './components/MyPresTwo.vue';
 import condationalStmVue from './components/condationalStm.vue';
 import ParentTochildOneVue from './components/ParentTochildOne.vue';
 import BindingModuleVue from './components/binding/BindingModule.vue';
+import propsmoduleVue from './components/props/propsmodule.vue';
 
 export default {
   name: 'App',
@@ -23,7 +25,8 @@ export default {
     MyPresTwoVue,
     condationalStmVue,
     ParentTochildOneVue,
-    BindingModuleVue
+    BindingModuleVue,
+    propsmoduleVue
     
   },
 }
