@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.price_cards {
+    margin: 5rem auto;
+    max-width: 80%;
+    /* border: 2px solid red; */
+}
+
+.cards_switch {
+    /* border: 2px solid rgb(0, 255, 149); */
+    width: 16rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.cards_switch_btn {
+    /* border: 2px solid green; */
+    background-color: white;
+    border-radius: 2rem;
+    padding: .5em;
+    box-shadow: 0px 0px 15px #ececec;
+}
+
+.cards_switch_btn button {
+    border: none;
+    border-radius: 1.5rem;
+    outline: none;
+    padding: 1.2em 2.5em;
+    cursor: pointer;
+}
+
+.cards_switch_btn button:nth-child(1) {
+    background-color: #5ec382;
+    color: white;
+}
+
+.cards_switch_btn button:nth-child(2) {
+    background-color: #eaf9f5;
+    color: #5ec382;
+}
+
+.card_row {
+    margin: 2rem 0rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.card_col {
+    width: 16rem;
+    height: 32rem;
+    background-color: white;
+    border-radius: 2rem;
+    padding: .5em;
+    box-shadow: 0px 0px 15px #ececec;
+    transition: cubic-bezier(0.61,-0.27, 0.77, 1.59) 0.2s;
+
+}
+
+.card_col .name_card {
+    margin: .6em 0em;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.inner_card_icon {
+    text-align: center;
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.pie_chart::before {
+    position: absolute;
+    background-color: #5ec382;
+    top:3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    transform: translate(-50% ,-50%);
+}
+.details_price_card{
+    text-align: center;
+}
+.card_col .price_ {
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-top: 2.5rem;
+    color: black;
+}
+.card_col .price_ span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #8d8d8d;
+}
+.details_price_card p{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #8d8d8d;
+    margin: 1rem;
+}
+.sign_up{
+    border: none;
+    border-radius: 1.5rem;
+    outline: none;
+    margin: 1.2em 0em;
+    padding: 1.2em 4em;
+    cursor: pointer;
+    background-color: #5ec382;
+    color: white;
+
+}
+.card_col:hover{
+    transform: scale(1.10);
+    
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <label for="select">select state: </label>
+    <select name="select" id="select">
+      
+    </select>
+  </div>
+  
+  <script>
+fetch("./assets/zipcodes.json")
+  .then(response => response.json())
+  .then(json => getCodes(json));
+
+ 
+function getCodes(json){
+  const zipCodes=json;
+console.log(zipCodes[0]);
+
+document.getElementById("select").innerHTML+=`<option value="name">hello</option>`
+
+}
+
+
+
+  </script>
+</body>
+</html>

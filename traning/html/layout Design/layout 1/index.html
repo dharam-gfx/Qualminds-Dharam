@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- navigation section start -->
+        <section>
+            <nav class="navBar">
+                <div class="nav_row">
+                    <div class="nav_col">
+                    </div>
+                    <div class="nav_col">
+                    </div>
+                </div>
+
+                <div class="hamburger" onclick="navToggle()">
+                </div>
+                <div class="hamburger_navLink" id="hamburger_navLink">
+                    <ul>
+                        <li>home</li>
+                        <li>home</li>
+                        <li>home</li>
+                        <li>home</li>
+                    </ul>
+
+                </div>
+            </nav>
+        </section>
+        <!-- navigation section end -->
+
+        <!-- body section start -->
+
+        <section>
+            <header>
+                <div class="header">
+                </div>
+                <div class="cards">
+                    <div class="card">
+
+                    </div>
+                    <div class="card">
+
+                    </div>
+                    <div class="card">
+
+                    </div>
+                </div>
+            </header>
+        </section>
+
+
+        <section>
+            <footer>
+                <div class="footer_row">
+                    <div class="footer_child_row">
+                        <div class="footer_col">
+                        </div>
+                        <div class="footer_col">
+
+                        </div>
+                    </div>
+                    <div class="footer_child_row">
+                        <div class="footer_col">
+
+                        </div>
+                        <div class="footer_col">
+
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </section>
+    </div>
+
+
+    <script>
+        // let flag=true;
+        // function navToggle(){
+
+        //     if(flag){
+        //         document.getElementById("hamburger_navLink").style.display="block";
+        //         console.log(flag);
+        //         flag=false;
+        //     }
+        //     else{
+        //         document.getElementById("hamburger_navLink").style.display="none"
+        //       console.log(flag);
+        //         flag=true;
+        //     }
+
+        // }
+        function navToggle() {
+            var x = document.getElementById( "hamburger_navLink" );
+            if ( x.style.display === "block" ) {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
