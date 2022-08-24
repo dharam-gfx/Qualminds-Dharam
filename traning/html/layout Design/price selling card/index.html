@@ -17,8 +17,8 @@
         <div class="price_cards">
             <div class="cards_switch">
                 <div class="cards_switch_btn">
-                    <button type="button">Monthly</button>
-                    <button type="button">Annualy</button>
+                    <button id="card_btn1" type="button" onclick="carBtnClick(1)">Monthly</button>
+                    <button id="card_btn2" type="button" onclick="carBtnClick(2)">Annualy</button>
                 </div>
             </div>
             <div class="price_card_Section">
@@ -35,7 +35,6 @@
                             <p>2 Email Address</p>
                             <p>WordPress Installs</p>
                             <p>Private Support</p>
-
                             <button class="sign_up" type="button">Sign Up</button>
                         </div>
 
@@ -52,7 +51,6 @@
                             <p>2 Email Address</p>
                             <p>WordPress Installs</p>
                             <p>Private Support</p>
-
                             <button class="sign_up" type="button">Sign Up</button>
                         </div>
 
@@ -69,7 +67,6 @@
                             <p>2 Email Address</p>
                             <p>WordPress Installs</p>
                             <p>Private Support</p>
-
                             <button class="sign_up" type="button">Sign Up</button>
                         </div>
 
@@ -81,7 +78,25 @@
 
         </div>
     </div>
+<script>
+function carBtnClick(click){
+    if(click==2){
+        document.getElementById("card_btn2").style.backgroundColor="#5ec382";
+        document.getElementById("card_btn2").style.color="white";
+        document.getElementById("card_btn2").style.transition="ease-in 0.4s";
+        document.getElementById("card_btn1").style.backgroundColor="#eaf9f5";
+        document.getElementById("card_btn1").style.color="#5ec382";
+        document.getElementById("card_btn1").style.transition="ease-in 0.4s";
 
+    }
+    if(click==1){
+        document.getElementById("card_btn1").style.backgroundColor="#5ec382";
+        document.getElementById("card_btn1").style.color="white";
+        document.getElementById("card_btn2").style.backgroundColor="#eaf9f5";
+        document.getElementById("card_btn2").style.color="#5ec382";
+    }
+}
+</script>
 </body>
 
 </html>
