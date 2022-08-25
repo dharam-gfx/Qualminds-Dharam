@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header section start  */
+.header_section {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+    color: red;
+
+}
+
+/* header section end  */
+
+
+/* nav section start */
+.navigation {
+    /* border: 2px solid rgb(9, 255, 0); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    background-color: crimson;
+}
+
+.nav_link ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_link ul li {
+    /* border: 2px solid rgb(255, 242, 0); */
+    
+    color: white;
+    padding: 0.5em 1.5em;
+    margin: 0em 0.5em;
+    background-color: aquamarine;
+}
+
+.nav_link ul li a {
+    /* color: white; */
+}
+
+.search_box input , .search_box button{
+    padding: 0.5em 1.5em;
+}
+
+/* nav section end  */
+
+/* main section start */
+.heading{
+    text-align: center;
+    padding: 0.5em 0em;
+
+}
+.hero{
+    display: flex;
+}
+
+.content{
+    background-color: coral;
+    flex: 2;
+    padding:  1.5em;
+
+}
+.content > *{
+    margin: 1.5rem 0rem;
+}
+
+.side_bar{
+    background-color: gold;
+    flex: 1;
+    padding: 1.5em 3rem;
+    
+    
+}
+.most_popular_articles ul li,.new_author_book_list ol li{
+    list-style-position: inside;
+    margin: 0.5em 0em;
+}
+/* main section end */
+
+
+/* footer section start */
+.footer p{
+    padding: 0.5em 0em;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    
+}
+/* footer section end  */
