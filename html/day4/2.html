@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lab-grid-cell {
+            background: #222f3e;
+            width: 500px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 0.5em;
+            border: 5px solid rgba(255, 255, 255, .05);
+        }
+
+        .img-hover-zoom--basic img {
+            width: 100%;
+            height: 300px;
+            transition: transform .5s ease;
+            z-index: -1;
+        }
+        .lab-grid-cell:hover  .img-hover-zoom--basic img  {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="lab-grid-cell ">
+        <div class="img-hover-zoom--basic">
+            <img src="https://picsum.photos/800/800?image=100">
+        </div>
+        <div>
+            <h2 style="text-align: center ; background-color: red;padding: 20px; z-index: 2; overflow: hidden;">hello world</h2>
+        </div> 
+    </div>
+</body>
+
+</html>

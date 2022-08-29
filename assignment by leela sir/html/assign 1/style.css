@@ -566,6 +566,9 @@ padding: 8px 0px;
 .aboutsec1 p {
     font-weight: 400;
     color: #5e5e5e;
+    /* border: 1px solid red; */
+    /* text-align: justify; */
+    /* margin: 10px; */
 }
 
 .copyR {

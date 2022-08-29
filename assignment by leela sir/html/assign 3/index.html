@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            /* border-collapse: collapse; */
+            border: 4px solid blue;
+            font-size: 1.5rem;
+        }
+
+        th,
+        td {
+            border: 4px solid blue;
+        }
+
+        .nested_table table,
+        .nested_table table th,
+        .nested_table table td {
+            border: 0;
+        }
+
+        .detail_heading {
+            text-align: start;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <table>
+            <caption>
+                <h2>Advanced HTML tag for Table using thead,tbody and tfoot.</h2>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th colspan="3">Purchase order:987654321</th>
+                    <th>Tutorialbrain - 10th Oct 2020</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="nested_table" colspan="2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="detail_heading">Vendor:</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>ABC XYX ltd.</td>
+                                </tr>
+                                <tr>
+                                    <td> DUMMY STREET</td>
+                                </tr>
+                                <tr>
+                                    <td>BUILDING 123</td>
+                                </tr>
+                                <tr>
+                                    <td>AHAZARIBAGH, JHARKHAND, 825301</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+
+                    <td class="nested_table" colspan="2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="detail_heading">SHIP TO:</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>MS DHONI</td>
+                                </tr>
+                                <tr>
+                                    <td>WILSON GARDEN</td>
+                                </tr>
+                                <tr>
+                                    <td>SOUTHEAST BLOCK, RANCHI - 834001</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <thead>
+                        <tr>
+                            <th>Qty.</th>
+                            <th>Item Code. </th>
+                            <th>Description</th>
+                            <th>Unit Price</th>
+                        </tr>
+                    </thead>
+                </tr>
+
+                <tr>
+                    <td>100 </td>
+                    <td>IABCDE</td>
+                    <td>Pencils </td>
+                    <td>20.00</td>
+                </tr>
+                <tr>
+                    <td>1000 </td>
+                    <td>IN877</td>
+                    <td>Notebooks </td>
+                    <td>100.00</td>
+                </tr>
+                <tr>
+                    <td>500</td>
+                    <td>IP8675</td>
+                    <td>Pens </td>
+                    <td>70.00 </td>
+                </tr>
+                <tr>
+                    <th colspan="3">Subtotal</th>
+                    <td>190.00</td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">GST</th>
+                    <td>5%</td>
+                    <td>9.50</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Grand Total</th>
+                    <td>$ 199.50</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+
+</body>
+
+</html>
