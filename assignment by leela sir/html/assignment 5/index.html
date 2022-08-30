@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main {
+            max-width: 800px;
+            margin: auto;
+            /* border: 2px solid red; */
+        }
+
+        table {
+            width: 100%;
+            border: 2px solid black;
+       
+            border-collapse: collapse;
+        }
+     
+
+        td,
+        th {
+            border: 2px solid black;
+            padding: 10px;
+
+        }
+
+        p {
+            margin: 0 5px;
+            
+        }
+        .firstTable  td,
+        .firstTable th{
+            padding: 0px 5px 25px 5px;
+
+        }
+        .bold{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <table class="firstTable">
+            <caption>
+                <h2>Tax Invoice</h2>
+            </caption>
+            <tbody>
+                <tr>
+                    <td rowspan="3">
+                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem, ipsum dolor.</p>
+                    </td>
+                    <td>
+                        <p>Invoice No.</p>
+                        <p class="bold">SINV-2018-00045</p>
+                    </td>
+                    <td>
+                        <p>Dated</p>
+                        <p class="bold">06-01-2019 </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Delivery Note</td>
+                    <td>Mode/Terms of Payment</td>
+                </tr>
+                <tr>
+
+                    <td>Suppliers Ret.</td>
+                    <td>Other Reference(s)</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">
+                        <p>Customer </p>
+                        <p>Jeremy Media</p>
+                        <p>Swimlane road</p>
+                        <p>PO BOX 321</p>
+                        <p>Flowchart town</p>
+                    </td>
+                    <td>
+                        <p>Buyer's Order No</p>
+                    </td>
+                    <td>
+                        <p>Dated</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Despatch Document No.</p>
+
+                    </td>
+                    <td>
+                        <p>Dated</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Despatched through</td>
+                    <td>Destination</td>
+                </tr>
+                <tr>
+
+                    <td colspan="2">Terms of Delivery</td>
+
+                </tr>
+            </tbody>
+        </table>
+        <table class="table_mid">
+            <thead>
+                <tr>
+                    <th>SI</th>
+                    <th>Particulars </th>
+                    <th>QTY</th>
+                    <th>Rate </th>
+                    <th>VAT</th>
+                    <th>Amount</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Commercial Rent</td>
+                    <td>12</td>
+                    <td>$6.48789</td>
+                    <td>10.0%</td>
+                    <td>$77.85468</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Commercial Rent</td>
+                    <td>12</td>
+                    <td>$6.48789</td>
+                    <td>10.0%</td>
+                    <td>$77.85468</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Commercial Rent</td>
+                    <td>12</td>
+                    <td>$6.48789</td>
+                    <td>10.0%</td>
+                    <td>$77.85468</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Commercial Rent</td>
+                    <td>12</td>
+                    <td>$6.48789</td>
+                    <td>10.0%</td>
+                    <td>$77.85468</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tr>
+                <td rowspan="3">
+                    <p>Amount in Words</p>
+                    <p style="padding-bottom: 50px;">USD Eight Hundred And Four and Twenty Four Cent
+                        only.</p>
+                    <p >
+                        One Million, Eight Hundred And Fifty Nine
+                        Thousand, Four Hundred And Two and Eighty Eight
+                    </p>
+                    <p>
+                        Cent only.
+                    </p>
+                </td>
+                <td class="bold">SUBTOTAL </td>
+                <td class="bold">1,799,568.04256</td>
+                <td class="bold">$778.3598</td>
+            </tr>
+            <tr class="bold">
+                
+                <td>VAT </td>
+                <td>59,826.2368</td>
+                <td>$25.8764</td>
+            </tr>
+            <tr class="bold">
+                
+                <td>TOTAL </td>
+                <td>1,859,394.27936</td>
+                <td>$804.23628</td>
+            </tr>
+            <tr>
+                <td colspan="2">No Remarks</td>
+                <td colspan="2">
+                    <p style="padding-bottom: 50px;">for rahul kumar</p>
+                    <p>Authorised Signatory</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="text-align: center; padding-top: 5px">
+        <button type="button" onclick="print()">Print</button>
+    </div>
+
+</body>
+
+</html>

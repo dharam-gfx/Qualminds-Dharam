@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 90%;
+            /* height: 400px; */
+            margin: auto;
+            /* border: 2px solid red; */
+        }
+
+        table {
+            width: 100%;
+
+            /* font-size: 30px; */
+
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Nested Table</h1>
+            <table>
+                <tr>
+                    <th>header column 1</th>
+                    <th>header column 2</th>
+                    <th>header column 3</th>
+                    <th>header column 4</th>
+
+                </tr>
+                <tr>
+                    <td>row 2 item 1 </td>
+                    <td>row 2 item 2</td>
+                    <td rowspan="2">
+                        <table>
+                            <caption>
+                                <h3>row 2 nested table 1</h3>
+                            </caption>
+                            <tr>
+                                <th> row 1 head 1
+                    </td>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th> row 1 head 1</td>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <th> row 1 head 1</td>
+                    <td>item</td>
+                </tr>
+
+            </table>
+            </td>
+            <td>row 2 item 4 <br> A second line</td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <caption>
+                            <h3>row 3 Nested table 2</h3>
+                        </caption>
+                        <tr>
+                            <th> row 1 head 1
+                </td>
+                <td>item</td>
+            </tr>
+            <tr>
+                <th> row 1 head 1</td>
+                <td>item</td>
+            </tr>
+
+            </table>
+            </td>
+            <td>row 3 item 2</td>
+            <!-- <td>heading 1</td> -->
+            <td rowspan="2">row 3 item 3</td>
+
+            </tr>
+            <tr>
+                <!-- <td>heading 1</td> -->
+                <td>row 4 item 1</td>
+                <td>row 4 item 2</td>
+                <td>row 4 item 3</td>
+
+            </tr>
+            <tfoot>
+                <tr>
+
+                    <td colspan="4">row 5 last row of outer table</td>
+
+                </tr>
+            </tfoot>
+            </table>
+
+    </div>
+
+
+</body>
+
+</html>

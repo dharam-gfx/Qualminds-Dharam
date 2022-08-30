@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <h1>For all devices</h1>
+
+    <div class="form_section">
+        <form method="get">
+            <div class="cont_info_address">
+                <div class="row_1">
+                    <div class="contact_info_section col_1">
+                        <div class="contact_info">
+                            <fieldset>
+                                <legend>CONTACT INFORMATION</legend>
+                                <div class="contact_info_input">
+                                    <div class="row_1">
+                                        <div class="col_1">
+                                            <input type="text" placeholder="First Name*" name="fname" required>
+                                            <input type="text" placeholder="Last Name*" name="lname" required>
+                                        </div>
+                                        <div class="col_2">
+                                            <input type="email" placeholder="Email*" name="email" required>
+                                            <input type="text" placeholder="Phone" name="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <div class="address_info_section col_2">
+                        <div class="address_info ">
+                            <fieldset>
+                                <legend>ADDRESS</legend>
+                                <div class="address_info_input">
+                                    <div class="row_1">
+                                        <div class="col_1">
+                                            <input type="text" placeholder="Street line 1*" required>
+                                        </div>
+                                        <div class="col_2">
+                                            <div class="add_col2_row">
+                                                <div class="add_col2_col">
+                                                    <input type="text" placeholder="City*" name="city" required>
+                                                    <input type="text" placeholder="Postal / Zip code*" name="zip"
+                                                        required>
+                                                </div>
+                                                <div class="add_col2_col">
+                                                    <input type="text" placeholder="State / Province*" required>
+                                                    <select name="country" id="countery" required>
+                                                        <option value="NA"> -- Please Select -- </option>
+                                                        <option value="india">INDIA</option>
+                                                        <option value="UK">UK</option>
+                                                        <option value="USA">USA</option>
+                                                    </select>
+                                                    <p>Country*</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project_note">
+                <div class="row_1">
+                    <div class="project_info_section col_1">
+                        <div class="project_info">
+                            <fieldset>
+                                <legend>PROJECTS </legend>
+                                <div class="project_info_input">
+                                    <div class="row_1">
+                                        <div class="col_1">
+                                            <input type="text" placeholder="item #1 name">
+                                            <input type="text" placeholder="item #2 name">
+                                            <input type="text" placeholder="item #3 name">
+                                        </div>
+                                        <div class="col_2">
+                                            <input type="text" placeholder="item #1 quantity">
+                                            <input type="text" placeholder="item #2 quantity">
+                                            <input type="text" placeholder="item #3 quantity">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="notes_info_section col_2">
+                        <div class="notes_info">
+                            <fieldset>
+                                <legend>NOTES </legend>
+                                <div class="notes_info_input">
+                                    <div class="notes">
+                                        <p>Additional Comments or Questions</p>
+                                        <textarea name="comments" id="notes" cols="50" rows="9"></textarea>
+                                    </div>
+                                </div>
+                        </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <button class="btn_submit" type="submit">REQUEST QUOTE</button>
+            </div>
+    </div>
+    </form>
+    </div>
+
+</body>
+
+</html>

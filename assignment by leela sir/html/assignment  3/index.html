@@ -9,6 +9,7 @@
     <style>
         table {
             width: 100%;
+            /* height: 100%; */
             /* border-collapse: collapse; */
             border: 4px solid blue;
             font-size: 1.5rem;
@@ -17,12 +18,14 @@
         th,
         td {
             border: 4px solid blue;
+            
         }
 
         .nested_table table,
         .nested_table table th,
         .nested_table table td {
-            border: 0;
+            border: 0 ;
+
         }
 
         .detail_heading {
@@ -34,7 +37,7 @@
 <body>
 
     <main>
-        <table>
+        <table >
             <caption>
                 <h2>Advanced HTML tag for Table using thead,tbody and tfoot.</h2>
             </caption>
@@ -96,14 +99,10 @@
                     </td>
                 </tr>
                 <tr>
-                    <thead>
-                        <tr>
-                            <th>Qty.</th>
-                            <th>Item Code. </th>
-                            <th>Description</th>
-                            <th>Unit Price</th>
-                        </tr>
-                    </thead>
+                    <th>Qty.</th>
+                    <th>Item Code. </th>
+                    <th>Description</th>
+                    <th>Unit Price</th>
                 </tr>
 
                 <tr>

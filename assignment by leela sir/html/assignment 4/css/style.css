@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: dimgray;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    border-bottom: 2px solid gray;
+}
+
+.form_section {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.contact_info_section,
+.address_info_section,
+.project_info_section,
+.notes_info_section {
+    /* border: 2px solid red; */
+    padding: 0.5em;
+
+}
+
+.contact_info fieldset,
+.address_info fieldset,
+.project_info fieldset,
+.notes_info fieldset {
+    border: 0;
+
+}
+
+.contact_info legend,
+.address_info legend,
+.project_info legend,
+.notes_info legend {
+    /* border: 2px solid red; */
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: gray;
+
+}
+
+.contact_info_input,
+.address_info_input,
+.project_info_input,
+.notes_info_input {
+    margin-top: 1em;
+    border-top: 2px solid #d1d2d1;
+    padding: 0.5em 1em;
+
+
+}
+
+.contact_info_input input,
+.address_info_input input,
+.project_info_input input,
+.notes_info_input input,
+.address_info_input .add_col2_col:last-child select {
+    display: block;
+    width: 100%;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    margin: 1em 0em;
+}
+
+.address_info_input .add_col2_col:last-child p {
+    color: gray;
+}
+
+.cont_info_address .row_1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.cont_info_address .row_1 .col_1 {
+    flex: 1;
+}
+
+.cont_info_address .row_1 .col_2 {
+    flex: 2;
+}
+
+.contact_info_input .row_1 .col_1 input:last-child {
+    margin-bottom: 0;
+}
+
+.contact_info_input .row_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.address_info_input .row_1 {
+    flex-direction: column;
+
+}
+
+.address_info_input .row_1 input:first-child {
+    margin-bottom: 0;
+}
+
+.address_info_input .row_1 .col_2 .add_col2_row {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.address_info_input .add_col2_col {
+    flex: 1;
+}
+
+
+.project_note .row_1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.project_note .row_1 .col_1 {
+    flex: 2;
+}
+
+.project_note .row_1 .col_2 {
+    flex: 1;
+}
+
+.project_info_input .row_1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.notes_info_input .notes p {
+    font-weight: bold;
+    color: dimgray;
+}
+
+.notes_info_input .notes textarea {
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.btn_submit {
+    margin-left: 1.5em;
+    padding: 0.5em 1.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: royalblue;
+    border: none;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width:820px) {
+    .cont_info_address .row_1 {
+
+        flex-direction: column;
+    }
+
+    .contact_info_input .row_1 {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .contact_info_input .row_1 .col_1 {
+        flex: 1;
+    }
+
+    .contact_info_input .row_1 .col_2 {
+        flex: 1;
+    }
+
+    .project_note .row_1 {
+        flex-direction: column;
+    }
+
+    .project_info_input .row_1 {
+        flex-direction: row;
+    }
+
+    .project_info_input .row_1 .col_1:first-child input:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (max-width:425px) {
+
+    .contact_info_input .row_1 {
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .address_info_input .row_1 .col_2 .add_col2_row {
+        display: flex;
+        flex-direction: column;
+        gap: 0em;
+    }
+
+    .address_info_input .add_col2_col:first-child input:last-child {
+        margin-bottom: 0;
+    }
+
+    .project_info_input .row_1 {
+        flex-direction: column;
+        gap: 0;
+    }
+}
