@@ -42,6 +42,7 @@ h1 {
 .notes_info legend {
     /* border: 2px solid red; */
     font-size: 1.5rem;
+    /* font-size: clamp(1rem, 1rem + 10vw, 1.5rem); */
     font-weight: 400;
     color: gray;
 
@@ -144,6 +145,8 @@ h1 {
 .notes_info_input .notes textarea {
     width: 100%;
     margin-top: 0.5em;
+    padding: 1rem;
+    font-size: 1em;
 }
 
 .btn_submit {
@@ -157,9 +160,56 @@ h1 {
     border-radius: 4px;
 }
 
+.contact_info_input {
+    position: relative;
+}
+
+/* .contact_info_input .row_1 span::after{
+    content: "";
+    position: absolute;
+    transform: translate(10%,-102%);
+    width: 5px;
+    height: 40px;
+    background-color: #ff3737;
+    border-radius: 2px 0px 0px 2px;
+} */
+
+/* css validation start */
+input {
+    border: 2px solid gray;
+    border-radius: 4px;
+    box-shadow: inset 6px 0px 0px 0px #ffb7b7;
+    transition: ease-in-out 0.4s;
+}
+
+/* input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
+
+input:focus {
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid gray;
+    /* border: 2px solid #ff1212; */
+}
+
+input:not(:placeholder-shown) {
+    box-shadow: inset 6px 0px 0px 0px #c1ffd1;
+}
+
+input {
+    text-transform: uppercase;
+}
+
+/* css validation end */
+::-webkit-scrollbar {
+    display: none;
+}
+
 @media only screen and (max-width:820px) {
     .cont_info_address .row_1 {
-
         flex-direction: column;
     }
 
@@ -194,13 +244,13 @@ h1 {
 
     .contact_info_input .row_1 {
         flex-direction: column;
-        gap: 0em;
+        gap: 0;
     }
 
     .address_info_input .row_1 .col_2 .add_col2_row {
         display: flex;
         flex-direction: column;
-        gap: 0em;
+        gap: 0;
     }
 
     .address_info_input .add_col2_col:first-child input:last-child {

@@ -12,7 +12,7 @@
 
 <body>
     <h1>For all devices</h1>
-
+     
     <div class="form_section">
         <form method="get">
             <div class="cont_info_address">
@@ -24,12 +24,14 @@
                                 <div class="contact_info_input">
                                     <div class="row_1">
                                         <div class="col_1">
-                                            <input type="text" placeholder="First Name*" name="fname" required>
+                                            <span>
+                                            <input type="text" placeholder="First Name*" name="fname" minlength="3" maxlength="15" required>
+                                            </span>
                                             <input type="text" placeholder="Last Name*" name="lname" required>
                                         </div>
                                         <div class="col_2">
                                             <input type="email" placeholder="Email*" name="email" required>
-                                            <input type="text" placeholder="Phone" name="phone">
+                                            <input type="number" placeholder="Phone"  name="phone" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;"/>
                                         </div>
                                     </div>
                                 </div>
@@ -39,7 +41,7 @@
 
                     <div class="address_info_section col_2">
                         <div class="address_info ">
-                            <fieldset>
+                            <fieldset> 
                                 <legend>ADDRESS</legend>
                                 <div class="address_info_input">
                                     <div class="row_1">
@@ -50,7 +52,7 @@
                                             <div class="add_col2_row">
                                                 <div class="add_col2_col">
                                                     <input type="text" placeholder="City*" name="city" required>
-                                                    <input type="text" placeholder="Postal / Zip code*" name="zip"
+                                                    <input type="number" placeholder="Postal / Zip code*" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==5) return false;" name="zip"
                                                         required>
                                                 </div>
                                                 <div class="add_col2_col">
@@ -103,7 +105,7 @@
                                 <div class="notes_info_input">
                                     <div class="notes">
                                         <p>Additional Comments or Questions</p>
-                                        <textarea name="comments" id="notes" cols="50" rows="9"></textarea>
+                                        <textarea name="comments" id="notes" cols="50" rows="6"></textarea>
                                     </div>
                                 </div>
                         </div>
