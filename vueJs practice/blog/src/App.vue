@@ -1,11 +1,15 @@
 <template>
   <HelloWorld msg="Welcome to Your Vue.js App" />
   <MyHome msg1="hello dharam props" />
-  <MyPresTwoVue />
-  <condationalStmVue />
-  <ParentTochildOneVue />
-  <BindingModuleVue />
-  <propsmoduleVue/>
+  <MyPresTwoVue hidden/>
+  <condationalStmVue hidden/>
+  <ParentTochildOneVue  hidden/>
+  <BindingModuleVue hidden/>
+  <propsmoduleVue hidden/>
+
+  <formModuleVue />
+
+
 </template>
 
 <script>
@@ -16,6 +20,8 @@ import condationalStmVue from './components/condationalStm.vue';
 import ParentTochildOneVue from './components/ParentTochildOne.vue';
 import BindingModuleVue from './components/binding/BindingModule.vue';
 import propsmoduleVue from './components/props/propsmodule.vue';
+import formModuleVue from './components/form/formModule.vue';
+
 
 export default {
   name: 'App',
@@ -26,8 +32,10 @@ export default {
     condationalStmVue,
     ParentTochildOneVue,
     BindingModuleVue,
-    propsmoduleVue
+    propsmoduleVue,
+    formModuleVue,
     
+  
   },
 }
 </script>
