@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .Border {
+            border: 2px solid red;
+        }
+
+        .Container {
+            position: relative;
+            /* margin-top: 50px; */
+
+
+        }
+
+        .backgroundImg {
+            width: 100%;
+            position: absolute;
+            height: 660px;
+            z-index: -1;
+        }
+
+        .bgRow {
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .bgCol_1 {
+            flex-grow: .8;
+            background-color: #2a2a2a;
+        }
+
+        .bgCol_2 {
+            flex-grow: 1;
+            background-color: #7fffd4;
+        }
+
+        .contRow,
+        .box_1_row {
+            display: flex;
+        }
+
+        .box_1_row {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .contCol_1 {
+            flex: 1;
+            padding: 2.5rem;
+        }
+
+        .box {
+            flex: 1;
+            background-color: #fff;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+
+        .addBoxes .box_1_row:last-child {
+            margin-top: 2rem;
+        }
+
+        .add_icon {
+            margin: 1.5rem 0rem;
+        }
+
+        .add_icon i {
+
+            font-size: 5rem;
+            color: #7fffd4;
+        }
+
+        .box p:nth-child(2) {
+            color: #2a2a2a;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: .5em 0em;
+        }
+
+        .box p:nth-child(3) {
+
+            margin: .5em 0em;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: gray;
+        }
+
+        .contHeading h2 {
+            font-size: 3rem;
+            text-align: center;
+            text-transform: capitalize;
+            margin: 1.5rem 0rem;
+        }
+
+        .contCol_1 input,
+        textarea {
+            width: 100%;
+            padding: 0.5em 1.2em;
+            margin: 1rem 0rem;
+            font-size: 1rem;
+
+        }
+
+        .btnField {
+            text-align: center;
+            margin-top: 0.5em;
+
+        }
+
+        .btnField button {
+            padding: 0.5em 2rem;
+            background-color: transparent;
+            border: 2px solid white;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: ease-in-out 0.2s;
+
+        }
+
+        .btnField button:hover {
+            background-color: #2a2a2a;
+            color: white;
+
+        }
+
+        @media only screen and (max-width:820px) {
+
+            .bgRow,
+            .contRow {
+                flex-direction: column;
+            }
+
+            .backgroundImg {
+                height: 1300px;
+
+            }
+
+            .bgCol_1 {
+                flex-grow: 1;
+
+            }
+
+            .bgCol_2 {
+                flex-grow: 1;
+            }
+        }
+
+        @media only screen and (max-width:425px) {
+
+            .bgRow,
+            .contRow {
+                flex-direction: column;
+            }
+
+            .contCol_1 {
+                padding: 1.5rem;
+
+            }
+
+            .backgroundImg {
+
+                height: 1030px;
+
+            }
+
+            .box_1_row {
+                gap: 1rem;
+            }
+
+            .addBoxes .box_1_row:last-child {
+                margin-top: 1rem;
+            }
+
+            .box {
+                flex: 1;
+                padding: 1.3rem 0.5rem;
+
+            }
+
+            .add_icon {
+                margin: 0rem 0rem;
+            }
+
+            .add_icon i {
+                font-size: 2.5rem;
+
+            }
+
+            .box p:nth-child(2) {
+                font-size: .8em;
+                margin: .5em 0em;
+            }
+
+            .box p:nth-child(3) {
+                margin: .5em 0em;
+                font-size: .8em;
+                line-height: 1rem;
+            }
+
+
+            .bgCol_1 {
+                flex-grow: .7;
+
+            }
+
+            .bgCol_2 {
+                flex-grow: 1;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="backgroundImg">
+            <div class="bgRow">
+                <div class="bgCol_1 ">
+                    <!-- <h1>wdsfd</h1> -->
+                </div>
+                <div class="bgCol_2 ">
+                    <!-- <h1>wdsfd</h1> -->
+
+                </div>
+            </div>
+
+        </div>
+        <div class="contSec">
+            <div class="contRow">
+                <div class="contCol_1 ">
+                    <div class="addBoxes">
+                        <div class="box_1_row">
+                            <div class="box ">
+                                <div class="add_icon">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                </div>
+                                <p>our main office</p>
+                                <p>Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="box ">
+                                <div class="add_icon">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                </div>
+                                <p>our main office</p>
+                                <p>Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
+                            </div>
+
+                        </div>
+                        <div class="box_1_row">
+                            <div class="box ">
+                                <div class="add_icon">
+                                    <i class="fa fa-fax" aria-hidden="true"></i>
+                                </div>
+                                <p>fax</p>
+                                <p>Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="box ">
+                                <div class="add_icon">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <p>email</p>
+                                <p>Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="contCol_1 ">
+                    <div class="contHeading">
+                        <h2>contact us</h2>
+                    </div>
+                    <div class="inputField">
+                        <div class="nameField">
+                            <input type="text" placeholder="Enter Your Name">
+                        </div>
+                        <div class="emailField">
+                            <input type="email" placeholder="Enter a Valid email Address">
+                        </div>
+                        <div class="commentField">
+                            <textarea name="comment" id="comment" rows="10"></textarea>
+                        </div>
+                        <div class="btnField">
+                            <button type="button">submit</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
