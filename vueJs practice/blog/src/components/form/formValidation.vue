@@ -1,13 +1,12 @@
 <template>
     <div>
         <h1> form Validation</h1>
-
     </div>
     <div>
         <h2>show error</h2>
         <ol>
             <li v-for="(item, index) in error" :key="index">
-                {{item}} is empty please fill this field.
+                {{item}} is empty please fill this out of field.
             </li>
         </ol>
     </div>

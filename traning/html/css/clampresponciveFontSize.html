@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            /* width: 50vw; */
+            width: max(400px, 80vw);
+            height: max(100px, 30vw);
+            background-color: aquamarine;
+            margin: auto;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: clamp(1.5rem, 5vw + 1rem, 3rem);
+        }
+
+        p {
+            font-size: clamp(.8rem, 3vw, 1.8rem);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>hello world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id voluptate doloremque maxime, vel quo,
+            dolore amet tenetur iusto autem, asperiores libero? Harum fugit quo neque at nostrum soluta magnam!</p>
+    </div>
+</body>
+
+</html>
