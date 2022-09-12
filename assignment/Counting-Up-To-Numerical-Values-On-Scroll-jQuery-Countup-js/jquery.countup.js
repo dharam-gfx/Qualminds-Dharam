@@ -1,87 +1,11 @@
-var navbar = document.querySelector('.nav_section')
-var navLink1 = document.querySelector('.navLink1')
-var navLink2 = document.querySelector('.navLink2')
-var navLink3 = document.querySelector('.navLink3')
-var navLink4 = document.querySelector('.navLink4')
-var navLink5 = document.querySelector('.navLink5')
-var brand_name = document.querySelector('.brand_firstName');
-var change_themeIcon = document.querySelector('.change_themeIcon');
-
-window.onscroll = function() {
-
-  // pageYOffset or scrollY
-
-  if (window.pageYOffset > 0) {
-    navbar.classList.add('scrolled');
-    navLink1.classList.add('liScrollColor');
-    navLink2.classList.add('liScrollColor');
-    navLink3.classList.add('liScrollColor');
-    navLink4.classList.add('liScrollColor');
-    navLink5.classList.add('liScrollColor');
-    brand_name.classList.add('brand_nameScrollColor');
-    change_themeIcon.classList.add('change_theme_scrollColor');
-
-  } else {
-    navbar.classList.remove('scrolled')
-    navLink1.classList.remove('liScrollColor');
-    navLink2.classList.remove('liScrollColor');
-    navLink3.classList.remove('liScrollColor');
-    navLink4.classList.remove('liScrollColor');
-    navLink5.classList.remove('liScrollColor');
-    brand_name.classList.remove('brand_nameScrollColor');
-    change_themeIcon.classList.remove('change_theme_scrollColor');
-
-  }
-}
-
-
-$(document).ready(function () {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 50) {
-        $("#scroll").fadeIn();
-      } else {
-        $("#scroll").fadeOut();
-      }
-    });
-    $("#scroll").click(function () {
-      $("html, body").animate({ scrollTop: 0 }, 600);
-      return false;
-    });
-  });
-  
-
-  // Slideshow quote section  start
-  var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-
-// Slideshow quote section  end
-
-//count function start
-
+/*!
+* jquery.countup.js 1.0.3
+*
+* Copyright 2016, Adrián Guerra Marrero http://agmstudio.io @AGMStudio_io
+* Released under the MIT License
+*
+* Date: Oct 27, 2016
+*/
 (function( $ ){
   "use strict";
 
@@ -89,7 +13,7 @@ function showSlides(n) {
 
     // Defaults
     var settings = $.extend({
-        'time': 1500,
+        'time': 2000,
         'delay': 10
     }, options);
 
@@ -162,6 +86,5 @@ function showSlides(n) {
   };
 
 })( jQuery );
-$( '.counter' ).countUp();
 
-//count function end
+$( '.counter' ).countUp();
