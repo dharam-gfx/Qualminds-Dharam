@@ -1,0 +1,62 @@
+*,*::before,*::after{
+    padding: 0;margin: 0;
+    box-sizing: border-box;
+}
+
+.carousel{
+
+    width: 90%;
+    height: 100vh;
+    /* border: 2px solid red; */
+    margin: auto;
+    position: relative;
+}
+
+.carousel__track__container{
+    position: relative;
+    height: 100%;
+}
+.carousel__slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel__track{
+    list-style-type: none;
+}
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel__button{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: greenyellow;
+}
+.carousel__button--left{
+left: 20px;
+}
+.carousel__button--right{
+right: 20px;
+}
+.carousel__nav{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.carousel__nav_dot{
+    width: 15px;
+    height: 15px;
+    border: none;
+    margin: 0 8px;
+    border-radius: 100%;
+    z-index: 1;
+}

@@ -13,7 +13,6 @@
     --bg-success-10: #f5f9f7;
     --bg-success-20: #e5ebe8;
     --bg-warning: #fa9f1e;
-    ;
     --bg-dark: #2c3033;
     --bg-light: #f5f9f7f0;
     --text-light: #f5f9f7f0;
@@ -119,20 +118,21 @@ body {
     color: var(--text-warning) !important;
 }
 
-.nav_col .nav_link li a:hover::before {
+.nav_col .nav_link li a::before {
     content: "";
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
+    width: 0;
     height: 2px;
     bottom: -2px;
     background-color: #fa9f1e;
-    /* animation: name time func delay iteration dir fill play; */
-
-    animation: navLink 0.4s ease-in-out 0s 1 normal none running;
-
+    transition:ease-in-out 0.3s;
 
 }
 
+.nav_col .nav_link li a:hover::before {
+    width: 100%;
+}
 
 
 .nav_search .serach_field input {
@@ -1296,19 +1296,7 @@ background-color: rgba(7, 253, 7, 0.792);
     }
 }
 
-@keyframes navLink {
-    0% {
-        width: 0%;
-    }
 
-    70% {
-        width: 50%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
 
 @keyframes btnGrowing {
     0% {

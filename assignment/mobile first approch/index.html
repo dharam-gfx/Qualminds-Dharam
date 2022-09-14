@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>mobile first</title>
+</head>
+<body>
+<nav class="nav__container">
+    <div class="container">
+        <div class="nav__row">
+            <div class="nav_col nav__col-1">
+                <div class="logo">
+                    <h2>Hello<span>World</span></h2>
+                </div>
+            </div>
+            <div class="nav_col nav__col-2">
+                <div class="nav__link_container ">
+                    <div class="nav_link_group">
+                        <li class="nav_link "><a href="#">Home</a></li>
+                        <li class="nav_link"><a href="#">About</a></li>
+                        <li class="nav_link"><a href="#">Course</a></li>
+                        <li class="nav_link"><a href="#">Contact Us</a></li>
+                    </div>
+                </div>
+                <div class="hamburger_nav__link_container" id="hamburger_nav__link_container">
+                    <div class="hamburger_nav_link_group">
+                        <li class="hamburger_nav_link"><a href="#">Home</a></li>
+                        <li class="hamburger_nav_link"><a href="#">About</a></li>
+                        <li class="hamburger_nav_link"><a href="#">Course</a></li>
+                        <li class="hamburger_nav_link"><a href="#">Contact Us</a></li>
+                    </div>
+                </div>
+                    <button class="hamburger_button" onclick="hamburgerToggle()" type="button"><i class="fa fa-list" aria-hidden="true"></i></button>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="hero">
+
+    </div>
+</main>
+
+<script>
+    function hamburgerToggle() {
+        console.log("fdsgd");
+    var x = document.getElementById( "hamburger_nav__link_container");
+    if ( x.style.display === "block" ) {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+</body>
+</html> 
