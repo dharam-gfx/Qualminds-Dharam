@@ -1,0 +1,144 @@
+@import url('http://fonts.cdnfonts.com/css/brittany-signature');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-warning: #bc3853;
+    --text-dark: #110f0e;
+    --text-secondary: #978f87;
+    --bg-warning: #fac143;
+    --bg-success: #105751;
+    --bg-light-warning-1: #faf3e3;
+    --bg-light-warning-2: #e0d7c6;
+    --bg-warning: #bc3853;
+    --bg-dark: #110f0e;
+    --bg-secondary: #978f87;
+    --font-Brittany: 'Brittany Signature', sans-serif;
+    --font-Bebas_neue: 'Bebas Neue', cursive;
+    --font-size-M: clamp(1rem, 3vw, 1.8rem);
+    --font-size-XL: clamp(5rem, 8vw + 3rem, 10rem);
+    --font-size-L: clamp(2rem, 10vw + 2rem, 8rem);
+    --font-size-L: clamp(2rem, 10vw + 2rem, 8rem);
+}
+body{
+    background-color: var(--bg-light-warning-1);
+
+}
+.border {
+    border: 2px solid red;
+}
+
+.border2 {
+    border: 2px solid rgb(0, 255, 0);
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0rem 1rem;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.hero_container {
+    background-color: var(--bg-light-warning-1);
+    height: 100vh;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dot_icon i{
+    margin-left: 0.3rem;
+}
+
+.title_1 {
+    color: var(--text-dark);
+    font-size: var(--font-size-M);
+    font-family: var(--font-Bebas_neue);
+    letter-spacing: 1px;
+}
+
+.title_2 {
+    font-size: var(--font-size-XL);
+    color: var(--text-dark);
+    font-family: var(--font-Bebas_neue);
+    letter-spacing: 4px;
+}
+
+.heading_box {
+    height: 100%;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.heading_container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem 0;
+
+}
+
+.heading_1 {
+    position: absolute;
+    top: -2%;
+    left: 0;
+    width: 100%;;
+    text-align: center;
+
+}
+
+.title_3 {
+    font-size: var(--font-size-L);
+    color: var(--text-warning);
+    font-family: var(--font-Brittany);
+    letter-spacing: 1px;
+}
+
+.hero__footer {
+    text-align: center;
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 5rem;
+    color: var(--text-dark);
+    font-family: var(--font-Bebas_neue);
+    letter-spacing: 2px;
+    background-color: var(--bg-light-warning-2);
+    border-radius: 4px;
+    white-space: nowrap;
+}
+.creative_p__main{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+
+@media only screen and (min-width:425px) {
+    .heading_1 {
+        top: -17%;
+    }
+}
+
+@media only screen and (min-width:820px) {
+    .heading_1 {
+        /* top: -4rem; */
+    }
+}
