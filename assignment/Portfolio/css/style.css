@@ -23,8 +23,8 @@
     --font-Brittany: 'Brittany Signature', sans-serif;
     --font-Bebas_neue: 'Bebas Neue', cursive;
     --font-size-M: clamp(1rem, 3vw, 1.8rem);
-    --font-size-XL: clamp(5rem, 8vw + 3rem, 10rem);
-    --font-size-L: clamp(2rem, 10vw + 2rem, 8rem);
+    --font-size-XL: clamp(3rem, 8vw, 6rem);
+    --font-size-XXL: clamp(5rem, 8vw + 2rem, 10rem);
     --font-size-L: clamp(2rem, 10vw + 2rem, 8rem);
 }
 body{
@@ -71,10 +71,18 @@ body{
 }
 
 .title_2 {
+    font-size: var(--font-size-XXL);
+    color: var(--text-dark);
+    font-family: var(--font-Bebas_neue);
+    letter-spacing: 4px;
+}
+.title_4 {
     font-size: var(--font-size-XL);
     color: var(--text-dark);
     font-family: var(--font-Bebas_neue);
     letter-spacing: 4px;
+    line-height: 40px;
+    /* margin-top: 2%;/ */
 }
 
 .heading_box {
@@ -126,14 +134,16 @@ body{
 }
 .creative_p__main{
     text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
-@media only screen and (min-width:425px) {
+@media only screen and (min-width:426px) {
     .heading_1 {
-        top: -17%;
+        top: -22%;
     }
 }
 

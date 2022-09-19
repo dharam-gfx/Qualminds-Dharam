@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.border {
+    border: 2px solid red;
+}
+
+.card-box {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 1fr  1fr  1fr  1fr ;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    max-width: 1350px;
+    margin: auto;
+    padding: 0rem 1rem;
+}
+
+
+
+/* .card-box > *{
+
+}
+.card-box > * + *{
+    margin-left: 1.3rem;
+
+}
+.card-box > *{
+    margin-top: 1.3rem;
+
+} */
+
+.card {
+    width: 100%;
+    /* width: 425px; */
+    /* min-width: 250px; */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 15px #00000032;
+    transition:  background-image 0.5s;
+}
+
+.card-header img {
+    width: 100%;
+}
+
+.card-header {
+    position: relative;
+}
+
+.card-header::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    max-width: 140px;
+    height: 140px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 100%;
+    /* background-color: aqua; */
+    background-image: url('./assets/profile-pic\ \(1\).png');
+    background-position: center;
+    background-size: 110%;
+    filter: drop-shadow(0 0 8px #53535387);
+    transition:  background-image 0.5s;
+
+}
+
+.card-body {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-body .name {
+    margin-top: 3.5rem;
+    color: #343434;
+
+}
+
+.card-body-row {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem 0;
+}
+
+.card-body-row>* h2 {
+    color: dodgerblue;
+    font-size: 2rem;
+
+}
+
+.card-body-row>* p,
+.title {
+    color: gray;
+    font-weight: 600;
+}
+
+.btn {
+    border: none;
+    padding: .8rem 0rem;
+    width: 100%;
+    border-radius: 50px;
+    background-color: gold;
+    color: #343434;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #e2c000;
+}
+.card:hover .card-header::before {
+    
+}
+
+.card-footer {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.card-footer p {
+    color: gray;
+    text-align: justify;
+}
+@media(max-width:820px){
+    .card-box{
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-header::before {
+
+        max-width: 130px;
+        max-height: 130px;
+    }
+}
+@media(max-width:425px){
+    .card-box{
+        grid-template-columns: 1fr;
+    }
+}
