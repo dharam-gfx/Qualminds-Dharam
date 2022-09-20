@@ -28,6 +28,8 @@ body {
     --font-size-L: 22px;
     --font-size-lg-XL: 60px;
     --font-size-md-XL: 50px;
+    --font-size-lg-XL-2: 55px;
+    --font-size-md-XL-2: 48px;
 }
 
 .border {
@@ -41,6 +43,57 @@ body {
     position: relative;
 
 }
+
+/* global css start */
+h2 {
+    font-size: var(--font-size-md-XL-2);
+    color: var(--text-primary);
+    line-height: 55px;
+}
+
+h1 {
+    font-size: var(--font-size-md-XL);
+    color: var(--text-primary);
+    line-height: 60px;
+
+}
+
+p {
+    color: var(--text-secondary);
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-image: url('./../assets/SVG.svg');
+    background-repeat: no-repeat;
+    background-position: -50px 0px;
+    background-size: 100ex;
+    color: var(--text-white);
+    font-size: var(--font-size-M);
+    cursor: pointer;
+    transition: all .4s;
+}
+.btn:hover{
+    background-image:linear-gradient(#00000010,#00000010), 
+    url('./../assets/SVG.svg');
+
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.py-2 {
+    padding: 0 2rem;
+}
+
+/* global css end */
 
 /* <!-- heading top section start  --> */
 
@@ -119,6 +172,7 @@ body {
     background-size: 80ex;
     border-radius: 0.2rem;
     margin: 0rem 1rem;
+    cursor: pointer;
 }
 
 .nav-addCart-icon::before {
@@ -171,10 +225,8 @@ body {
 }
 
 .hero-content .heading {
-    font-size: var(--font-size-md-XL);
     color: var(--text-dark);
-    line-height: 60px;
-    margin: 5rem 0 1rem;
+    margin: 1rem 0 1rem;
 }
 
 .hero-content .heading span {
@@ -186,24 +238,11 @@ body {
     font-size: var(--font-size-M);
 }
 
-.btn {
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 0.2rem;
-    background-image: url('./../assets/SVG.svg');
-    background-repeat: no-repeat;
-    background-position: -50px 0px;
-    background-size: 100ex;
-    color: var(--text-white);
-    font-size: var(--font-size-M);
-}
-
 .order-btn {
     margin: 3rem 0 2rem;
 }
 
 .reviews p {
-    color: var(--text-dark);
     padding: 0.2rem 0;
 }
 
@@ -215,7 +254,48 @@ body {
     width: 100%;
 }
 
+
 /* <!-- hero section end  --> */
+
+/* <!-- products section start  --> */
+
+/* <!-- products section end  --> */
+.products-container {
+    background-image: url('./../assets/bg\ 2.svg');
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7rem 0;
+}
+
+.products-row {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.products-row>* {
+    flex: 1 1 100%;
+
+}
+
+.products-col-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+
+}
+
+.products-col-1 p {
+    margin: 1rem 0 3rem;
+}
+
+.product-img img {
+    width: 100%;
+}
 
 @media only screen and (min-width:479px) {
 
@@ -244,20 +324,36 @@ body {
     }
 
     /* <!-- heading top section end  --> */
-       /* <!-- navbar section start  --> */
-       .nav-container {
+    /* <!-- navbar section start  --> */
+    .nav-container {
         background-color: var(--bg-white);
-    
+
     }
-       /* <!-- navbar section end  --> */
+
+    /* <!-- navbar section end  --> */
 
 }
 
 
 @media only screen and (min-width:991px) {
 
+    /* global css start */
+    h2 {
+        font-size: var(--font-size-lg-XL-2);
+        color: var(--text-primary);
+    }
+
+    h1 {
+        font-size: var(--font-size-lg-XL);
+        color: var(--text-primary);
+
+    }
+
+    /* global css end */
+
+
     /* <!-- navbar section start  --> */
-  
+
     .nav-links {
         display: block;
         position: unset;
@@ -281,16 +377,24 @@ body {
     .nav-hamburger-icon {
         display: none;
     }
+
+    /* <!-- navbar section end  --> */
+
+    /* <!-- hero section start  --> */
+
     .hero-container {
         background-image: url('./../assets/hero\ bg.svg');
         background-repeat: no-repeat;
         background-size: 150%;
         background-position: 100% 70%;
     }
+
     .hero-content .heading {
         font-size: var(--font-size-lg-XL);
+        color: var(--text-dark);
+        margin: 5rem 0 1rem;
     }
-
+  
     .hero-row {
         flex-direction: row;
         padding: 6rem 0;
@@ -305,6 +409,28 @@ body {
         text-align: unset;
     }
 
-    /* <!-- navbar section end  --> */
+
+    /* <!-- hero section end --> */
+
+
+    /* <!-- products section start  --> */
+
+    .products-row {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .products-col-1 {
+        text-align: unset;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .products-col-2 .product-img {
+        padding-right: 0;
+    }
+
+    /* <!-- products section end  --> */
+
 
 }
