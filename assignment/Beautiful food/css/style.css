@@ -393,7 +393,10 @@ p {
 .item{
     background-color: var(--bg-white);
     border-radius: 0.4rem;
-
+    transition: all .3s;
+}
+.item:hover{
+    border: 1px solid var(--bg-primary);
 }
 .menu-item {
     width: 100%;
