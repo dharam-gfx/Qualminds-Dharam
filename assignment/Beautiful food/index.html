@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
@@ -29,7 +30,7 @@
                         </div>
                     </div>
                     <div class="nav-col nav-col-2">
-                        <div class="nav-links">
+                        <div class="nav-links" id="nav-links">
                             <ul class="nav-link-group">
                                 <li class="nav-link link-active"><a href="#">Home</a></li>
                                 <li class="nav-link"><a href="#">Order</a></li>
@@ -41,7 +42,7 @@
                         <div class="nav-addCart-icon">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </div>
-                        <div class="nav-hamburger-icon">
+                        <div class="nav-hamburger-icon" onclick="hideShow()">
                             <i class="fa fa-bars" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -157,7 +158,7 @@
     <!-- menu section start -->
     <div class="menu">
         <div class="menu-container">
-            <div class="container py-5 border">
+            <div class="container py-5 ">
                 <div class="menu-title">
                     <h2>Browse our menu</h2>
 
@@ -210,7 +211,7 @@
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                                                     industry.</p>
                                             </div>
-                                            <input class=" btn-count" type="number"  value="1">
+                                            <input class=" btn-count" type="number" value="1">
                                             <button class="btn-add-cart">Add to Cart</button>
                                         </div>
                                     </div>
@@ -407,6 +408,147 @@
         </div>
     </div>
     <!-- menu section end -->
+
+
+
+    <!-- checkout section start  -->
+    <div class="checkout">
+        <div class="checkout-container">
+            <div class="container ">
+                <div class="checkout-row">
+                    <div class="checkout-col checkout-col-1 ">
+                        <h2>Order online with our simple checkout.</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500.</p>
+                        <button class="btn checkout-btn">Learn about us</button>
+                    </div>
+                    <div class="checkout-col checkout-col-2 ">
+                        <div class="checkout-img p-3">
+                            <img src="./assets/group 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- checkout section end -->
+
+
+
+    <!-- call-store section start  -->
+    <div class="call-store">
+        <div class="call-store-container">
+            <div class="container ">
+                <div class="call-store-row">
+                    <div class="call-store-col call-store-col-1 ">
+                        <h2>Call our store and takeaway when it suits you best.</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500.</p>
+                        <button class="btn call-store-btn">Ph. +61 233 2333</button>
+                    </div>
+                    <div class="call-store-col call-store-col-2 ">
+                        <div class="call-store-img p-3">
+                            <img src="./assets/group 3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- call-store section end -->
+
+    <!-- order now section start  -->
+    <div class="order-now">
+        <div class="container  ">
+            <div class="order-now-row">
+                <div class="order-now-col order-now-col-1 ">
+                    <div class="order-img">
+                        <img src="./assets/6.png" alt="">
+                    </div>
+                </div>
+                <div class="order-now-col order-now-col-2 ">
+                    <h2><span>Support</span> good food
+                        and local business.</h2>
+                    <div class="order-now-btn">
+                        <button class="btn btn-order-now" type="button">Order Now</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- order now section end  -->
+
+    <!-- footer section start  -->
+    <footer>
+        <div class="footer">
+            <div class="footer-container py-2">
+                <div class="container py-5 ">
+                    <div class="footer-row">
+                        <div class="footer-col footer-col-1 ">
+                            <div class="logo">
+                                <img src="./assets/logo.svg" alt="">
+                            </div>
+                            <div class="address">
+                                <p>Takeaway & Delivery template
+                                    for small - medium businesses.</p>
+                            </div>
+                        </div>
+                        <div class="footer-col footer-col-2 ">
+                            <div class="footer-col-2-row">
+                                <div class="footer-col-2-col">
+                                    <h5>COMPANY</h5>
+                                    <ul>
+                                        <li>Home</li>
+                                        <li>Order</li>
+                                        <li>FAQ</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                </div>
+                                <div class="footer-col-2-col">
+                                    <h5>TEMPLATE</h5>
+                                    <ul>
+                                        <li>Style Guide</li>
+                                        <li>Changelog</li>
+                                        <li>License</li>
+                                        <li>Anna University</li>
+                                    </ul>
+                                </div>
+                                <div class="footer-col-2-col">
+                                    <h5>FLOWBASE</h5>
+                                    <ul>
+                                        <li>More Closeable</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container ">
+                    <div class="icon-group">
+                        <div class="icon-row">
+                            <div class="icon-col icon-col-1 ">
+                                <p>Built by <span>Dharam gfx</span> · Powered by <span>Qualminds</span></p>
+                            </div>
+                            <div class="icon-col icon-col-2 ">
+                                <div class="social-icons">
+                                    <i class="fa fa-instagram"></i>
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-youtube-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end  -->
+<script src="./js/script.js"></script>
+
 </body>
 
 </html>
